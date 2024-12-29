@@ -1,0 +1,7 @@
+---
+title: "Dominando Python"
+---
+
+# ¡Hola Mundo!
+
+Este es el comienzo de mi libro sobre Python.

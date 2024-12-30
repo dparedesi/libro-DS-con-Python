@@ -1,0 +1,7 @@
+# Agradecimientos {.unnumbered}
+
+En primer lugar, quiero expresar mi profunda gratitud a mi esposa, Desislava, por su invaluable apoyo emocional durante las incontables horas que dediqué a ordenar ideas y escribir código. Su conocimiento en R y Python también fueron clave, aportando soluciones y perspectivas que enriquecieron este trabajo.
+
+Un especial agradecimiento a [Rafael Irizarry](https://hsph.harvard.edu/profile/rafael-a-irizarry/)[^agradecimientos-1], un verdadero referente en el mundo de Data Science, cuya manera didáctica de enseñar técnicas avanzadas me permitió avanzar significativamente en mi aprendizaje. También extiendo mi gratitud a los desarrolladores que, con su dedicación, continúan creando y manteniendo este maravilloso lenguaje. Este libro no es más que un compendio y una guía, posible gracias al esfuerzo constante de quienes expanden las librerías y paquetes de R.
+
+[^agradecimientos-1]: https://hsph.harvard.edu/profile/rafael-a-irizarry/

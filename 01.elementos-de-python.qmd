@@ -1,0 +1,120 @@
+# Elementos de Python
+
+## Tipos de datos: los bloques de construcción de la información
+
+En Python, los datos se representan mediante diferentes **tipos de datos**. Estos tipos de datos son como los diferentes tipos de bloques que podemos usar para construir una casa. Cada tipo de dato tiene características y propiedades específicas, y se utiliza para representar diferentes tipos de información.
+
+### Números: enteros, flotantes, complejos
+
+Los números se utilizan para representar cantidades numéricas. En Python, existen tres tipos principales de números:
+
+-   **Enteros (`int`):** Representan números enteros, sin parte decimal (ej. `10`, `-5`, `0`).
+-   **Flotantes (`float`):** Representan números con parte decimal (ej. `3.14`, `-2.5`, `0.0`).
+-   **Complejos (`complex`):** Representan números complejos, con una parte real y una parte imaginaria (ej. `2 + 3j`).
+
+### Cadenas de texto (`str`)
+
+Las cadenas de texto se utilizan para representar texto. En Python, las cadenas se definen entre comillas simples (`'`) o comillas dobles (`"`).
+
+```{python}
+mi_nombre = "Juan"
+mi_ciudad = 'Madrid'
+```
+
+Podemos realizar diversas operaciones con las cadenas de texto, como:
+
+-   **Concatenación:** Unir dos o más cadenas.
+
+    ```{python}
+    saludo = "Hola, " + mi_nombre  # Output: "Hola, Juan"
+    ```
+
+-   **Repetición:** Repetir una cadena varias veces.
+
+    ```{python}
+    eco = "Hola" * 3  # Output: "HolaHolaHola"
+    ```
+
+-   **Indexación:** Acceder a caracteres individuales de una cadena.
+
+    ```{python}
+    inicial = mi_nombre[0]  # Output: "J"
+    ```
+
+-   **Rebanado (slicing):** Extraer una porción de una cadena.
+
+    ```{python}
+    apellido = mi_nombre[2:5]  # Output: "an"
+    ```
+
+-   **Longitud:** Obtener la longitud de una cadena (número de caracteres).
+
+    ```{python}
+    longitud_nombre = len(mi_nombre)  # Output: 4
+    ```
+
+-   **Métodos de cadena:** Python ofrece una variedad de métodos para manipular cadenas, como convertir a mayúsculas o minúsculas, reemplazar caracteres, buscar subcadenas, etc.
+
+    ```{python}
+    nombre_mayusculas = mi_nombre.upper()  # Output: "JUAN"
+    nombre_minusculas = mi_nombre.lower()  # Output: "juan"
+    ```
+
+Las cadenas de texto son una herramienta fundamental en la programación, ya que nos permiten trabajar con texto de diversas maneras, desde mostrar mensajes en la pantalla hasta procesar grandes cantidades de datos textuales.
+
+### Booleanos `(bool)`: Verdadero o Falso
+
+Los booleanos son un tipo de dato que representa valores de verdad: `True` (verdadero) o `False` (falso). Son como un interruptor que puede estar encendido o apagado.
+
+En Python, los booleanos se utilizan para:
+
+-   Representar el resultado de comparaciones:
+
+    ```{python}
+    edad = 25
+    es_mayor_de_edad = edad >= 18  # es_mayor_de_edad será True
+    ```
+
+-   Controlar el flujo de ejecución de un programa:
+
+    ```{python}
+    if es_mayor_de_edad:
+        print("Puedes votar")
+    else:
+        print("No puedes votar")
+    ```
+
+-   Realizar operaciones lógicas:
+
+    ```{python}
+    tiene_licencia = True
+    tiene_auto = False
+    puede_conducir = tiene_licencia and tiene_auto  # puede_conducir será False
+    ```
+
+**Operadores lógicos:**
+
+Python tiene tres operadores lógicos principales:
+
+-   `and`: Devuelve `True` si ambas expresiones son verdaderas.
+-   `or`: Devuelve `True` si al menos una de las expresiones es verdadera.
+-   `not`: Invierte el valor de verdad de una expresión.
+
+**Ejemplos:**
+
+```{python}
+a = True
+b = False
+
+a and b  # Output: False
+```
+
+```{python}
+a or b   # Output: True
+```
+
+```{python}
+not a    # Output: False
+```
+
+Los booleanos y los operadores lógicos son fundamentales para la toma de decisiones en la programación y para crear programas que respondan a diferentes situaciones.

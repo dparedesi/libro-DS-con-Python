@@ -8,14 +8,21 @@ book:
   date: "today"
   chapters:
     - index.qmd
-#    - intro.qmd
-#    - summary.qmd
-#    - references.qmd
+    - agradecimientos.qmd
+    - introduccion.qmd
+    - part: "I: Fundamentos y herramientas clave" # Opcional
+      chapters:
+        - 01.elementos-de-python.qmd
+
+    #- part: "II: Programación Orientada a Objetos" # Opcional
+    #  chapters:
+    #    - capitulo-2/01-funciones/01-definicion.qmd
+    #    - capitulo-2/01-funciones/02-parametros.qmd
 
 #bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: cosmos
 
 editor: visual

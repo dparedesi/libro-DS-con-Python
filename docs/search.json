@@ -4,9 +4,81 @@
     "href": "index.html",
     "title": "Data Science con Python",
     "section": "",
-    "text": "1 ¡Hola Mundo!\nEste es el comienzo de mi libro sobre Python.",
+    "text": "Prefacio\n¡Bienvenido(a) a la primera edición de Data Science con Python!\nEste libro, inicialmente concebido como una recopilación de notas personales para facilitar mi aprendizaje, ha evolucionado hasta convertirse en un recurso integral que cubre desde los fundamentos hasta técnicas avanzadas en ciencia de datos.\nMientras este libro de Python esta en progreso puedes apoyar el esfuerzo adquiriendo la versión “Data Science con R” en PDF en leanpub. Además, la compra incluye acceso a futuras actualizaciones y la posibilidad de realizar consultas directas conmigo durante tres meses sobre los temas tratados o su aplicación práctica.\nEn este libro trataremos temas cruciales como la ética en ciencia de datos, la reproducibilidad mediante Quarto y el control de versiones con Git y GitHub. Además, hemos fortalecido los contenidos sobre aprendizaje profundo, análisis de series temporales, minería de texto y análisis de sentimientos.\nLa versión web disponible en Github Pages busca democratizar el conocimiento en ciencia de datos. Compártelo y contribuyamos juntos a liberar el conocimiento.\nEsta versión se basa en ejercicios diseñados a partir de experiencias prácticas en clase y actividades de la Certificación Profesional en Data Science1 por HarvardX. El código utilizado para generar este libro está disponible en GitHub, fomentando la transparencia y la reproducibilidad.\nHemos mejorado y actualizado los ejercicios, incorporando casos prácticos recientes sobre análisis de redes sociales, cambio climático y minería de texto. Esto permite aplicar inmediatamente lo aprendido a problemas del mundo real.\nAgradezco profundamente a los lectores por sus comentarios y sugerencias, los cuales han sido fundamentales para mejorar esta versión.\nEste libro ha llegado a lectores en México, Colombia, España, Perú y Chile, entre otros países. Espero que sea una herramienta valiosa para avanzar en tu aprendizaje y práctica de ciencia de datos.\nSi tienes preguntas o sugerencias, puedes escribirme a dparedesi@uni.pe. Suelo responder en un plazo máximo de 48 horas.\nEsta obra está bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Dominando Python</span>"
+      "Prefacio"
+    ]
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Data Science con Python",
+    "section": "",
+    "text": "https://online-learning.harvard.edu/series/professional-certificate-data-science↩︎",
+    "crumbs": [
+      "Prefacio"
+    ]
+  },
+  {
+    "objectID": "agradecimientos.html#footnotes",
+    "href": "agradecimientos.html#footnotes",
+    "title": "Agradecimientos",
+    "section": "",
+    "text": "https://hsph.harvard.edu/profile/rafael-a-irizarry/↩︎",
+    "crumbs": [
+      "Agradecimientos"
+    ]
+  },
+  {
+    "objectID": "introduccion.html",
+    "href": "introduccion.html",
+    "title": "Introducción",
+    "section": "",
+    "text": "Adentrándonos en el mundo de Python\nEn la era del Big Data, donde la información se genera a un ritmo vertiginoso, Python se alza como el lenguaje de programación esencial para descifrar el complejo mundo de los datos. No se trata solo de analizar hojas de cálculo; Python te empodera para extraer conocimiento invaluable de terabytes de información, automatizar tareas complejas y construir modelos predictivos que anticipen el futuro.\nImagina poder:\nEstos son solo algunos ejemplos del poder de Python en acción. A lo largo de este libro, te sumergirás en las herramientas y técnicas que te permitirán abordar desafíos del mundo real y convertirte en un experto en Data Science.",
+    "crumbs": [
+      "Introducción"
+    ]
+  },
+  {
+    "objectID": "introduccion.html#adentrándonos-en-el-mundo-de-python",
+    "href": "introduccion.html#adentrándonos-en-el-mundo-de-python",
+    "title": "Introducción",
+    "section": "",
+    "text": "Predecir el comportamiento de los clientes: Con Python, las empresas pueden identificar patrones de compra, segmentar audiencias y personalizar ofertas para aumentar sus ventas.\nDetectar fraudes financieros: Bancos y instituciones financieras utilizan Python para desarrollar sistemas de detección de anomalías que previenen pérdidas millonarias.\nDiagnosticar enfermedades con mayor precisión: En el campo de la salud, Python permite analizar imágenes médicas, identificar biomarcadores y desarrollar modelos de diagnóstico temprano.\nOptimizar el tráfico en tiempo real: Ciudades inteligentes utilizan Python para analizar datos de sensores y cámaras, optimizando el flujo vehicular y reduciendo la congestión.\n\n\n\n¿Qué es Python? Paradigmas y aplicaciones\nPython es un lenguaje de programación de alto nivel, interpretado y multiparadigma. Esto se traduce en:\n\nCódigo legible y fácil de aprender: Su sintaxis clara y concisa reduce la curva de aprendizaje, permitiéndote concentrarte en la lógica de la programación y no en complejidades sintácticas.\nDesarrollo rápido y flexible: Al ser interpretado, puedes ejecutar tu código sin necesidad de compilaciones, lo que acelera el proceso de desarrollo y facilita la experimentación.\nAdaptabilidad a diferentes estilos: Python soporta la programación orientada a objetos, la programación imperativa y la programación funcional, brindándote la flexibilidad para elegir el enfoque más adecuado para cada problema.\n\nVentajas de Python para Data Science: Python se ha convertido en el lenguaje predilecto para Data Science por un conjunto de características que lo hacen incomparable:\n\nLibrerías especializadas: Python cuenta con un ecosistema rico en librerías que aceleran y simplifican el trabajo del científico de datos. NumPy, Pandas, Scikit-learn, Matplotlib, TensorFlow… ¡un arsenal a tu disposición!\nComunidad activa y colaborativa: Miles de desarrolladores y científicos de datos contribuyen a la comunidad Python, creando nuevas herramientas, compartiendo conocimiento y brindando soporte.\nVersatilidad para todo el flujo de trabajo: Python no solo se utiliza para el análisis y modelado de datos, sino también para otras tareas cruciales en Data Science, como la extracción de datos (web scraping), la limpieza de datos y la automatización de procesos.\nEscalabilidad para proyectos de cualquier tamaño: Desde análisis exploratorios hasta sistemas de Machine Learning a gran escala, Python se adapta a tus necesidades.",
+    "crumbs": [
+      "Introducción"
+    ]
+  },
+  {
+    "objectID": "introduccion.html#instalación-y-entorno-de-desarrollo",
+    "href": "introduccion.html#instalación-y-entorno-de-desarrollo",
+    "title": "Introducción",
+    "section": "Instalación y entorno de desarrollo",
+    "text": "Instalación y entorno de desarrollo\n¡Manos a la obra! Antes de sumergirnos en el fascinante mundo de Python, necesitamos preparar el terreno. En esta sección, te guiaremos paso a paso en la instalación de Python y la configuración de tu entorno de desarrollo. No te preocupes, ¡es más sencillo de lo que parece!\n\nInstalando Python\nLo primero es instalar Python en tu sistema. Puedes descargar la última versión desde la página oficial de Python (python.org). Asegúrate de seleccionar la versión adecuada para tu sistema operativo (Windows, macOS o Linux). La instalación es sencilla, como cualquier otro programa. Simplemente sigue las instrucciones del instalador.\nTe recomendamos descargar la última versión estable de Python para aprovechar las nuevas características y mejoras.\n\n\n\nEntornos virtuales: tu espacio de trabajo aislado\nEn el mundo del desarrollo con Python, es fundamental utilizar entornos virtuales. ¿Por qué? Porque te permiten aislar las dependencias de cada proyecto. Imagina que estás trabajando en dos proyectos diferentes, uno que utiliza la versión 2 de una librería y otro que requiere la versión 3. ¡Un caos! Los entornos virtuales evitan este tipo de conflictos y te permiten gestionar las librerías de cada proyecto de forma independiente.\nPara crear un entorno virtual, puedes utilizar venv (incluido en Python 3) o conda (si utilizas Anaconda).\nCon venv:\n\npython3 -m venv nombre_de_tu_entorno\n\nCon conda:\n\nconda create -n nombre_de_tu_entorno python=3.9 \n\nRecuerda activar el entorno virtual antes de empezar a trabajar en tu proyecto.\nIDEs: Elige tu arma\nUn IDE (Entorno de Desarrollo Integrado) es como tu taller de trabajo. Te proporciona herramientas para escribir, ejecutar y depurar tu código de forma eficiente. Existen diferentes IDEs para Python, cada uno con sus propias características y ventajas. Aquí te presentamos algunos de los más populares:\n\nVS Code: Un editor ligero y versátil, con una gran cantidad de extensiones para personalizarlo a tu gusto. Es una excelente opción tanto para principiantes como para desarrolladores experimentados.\n\n\n\nPyCharm: Un IDE completo y potente, con funciones avanzadas para el análisis de código, la depuración y el desarrollo web. Es ideal para proyectos grandes y complejos.\n\n\n\nJupyter Notebook: Perfecto para la ciencia de datos y el aprendizaje automático. Te permite combinar código, texto y visualizaciones en un único documento. Es muy útil para la experimentación y la creación de prototipos.\n\n\n\nGoogle Colaboratory: Python en la nube\n\nSi buscas una opción aún más accesible, Google Colaboratory es la solución. Es un entorno de desarrollo en la nube que te permite escribir y ejecutar código Python directamente en tu navegador, sin necesidad de instalar nada en tu ordenador. Además, te proporciona acceso gratuito a GPUs (unidades de procesamiento gráfico), lo que lo hace ideal para proyectos de machine learning que requieren gran capacidad de cómputo.\n\nCon estas herramientas a tu disposición, ¡estarás listo para comenzar tu aventura en el mundo de Python! En el próximo apartado, exploraremos los diferentes tipos de datos que puedes manipular con este lenguaje.",
+    "crumbs": [
+      "Introducción"
+    ]
+  },
+  {
+    "objectID": "01.elementos-de-python.html",
+    "href": "01.elementos-de-python.html",
+    "title": "1  Elementos de Python",
+    "section": "",
+    "text": "1.1 Tipos de datos: los bloques de construcción de la información\nEn Python, los datos se representan mediante diferentes tipos de datos. Estos tipos de datos son como los diferentes tipos de bloques que podemos usar para construir una casa. Cada tipo de dato tiene características y propiedades específicas, y se utiliza para representar diferentes tipos de información.",
+    "crumbs": [
+      "I: Fundamentos y herramientas clave",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Elementos de Python</span>"
+    ]
+  },
+  {
+    "objectID": "01.elementos-de-python.html#tipos-de-datos-los-bloques-de-construcción-de-la-información",
+    "href": "01.elementos-de-python.html#tipos-de-datos-los-bloques-de-construcción-de-la-información",
+    "title": "1  Elementos de Python",
+    "section": "",
+    "text": "1.1.1 Números: enteros, flotantes, complejos\nLos números se utilizan para representar cantidades numéricas. En Python, existen tres tipos principales de números:\n\nEnteros (int): Representan números enteros, sin parte decimal (ej. 10, -5, 0).\nFlotantes (float): Representan números con parte decimal (ej. 3.14, -2.5, 0.0).\nComplejos (complex): Representan números complejos, con una parte real y una parte imaginaria (ej. 2 + 3j).\n\n\n\n1.1.2 Cadenas de texto (str)\nLas cadenas de texto se utilizan para representar texto. En Python, las cadenas se definen entre comillas simples (') o comillas dobles (\").\n\nmi_nombre = \"Juan\"\nmi_ciudad = 'Madrid'\n\nPodemos realizar diversas operaciones con las cadenas de texto, como:\n\nConcatenación: Unir dos o más cadenas.\n\nsaludo = \"Hola, \" + mi_nombre  # Output: \"Hola, Juan\"\n\nRepetición: Repetir una cadena varias veces.\n\neco = \"Hola\" * 3  # Output: \"HolaHolaHola\"\n\nIndexación: Acceder a caracteres individuales de una cadena.\n\ninicial = mi_nombre[0]  # Output: \"J\"\n\nRebanado (slicing): Extraer una porción de una cadena.\n\napellido = mi_nombre[2:5]  # Output: \"an\"\n\nLongitud: Obtener la longitud de una cadena (número de caracteres).\n\nlongitud_nombre = len(mi_nombre)  # Output: 4\n\nMétodos de cadena: Python ofrece una variedad de métodos para manipular cadenas, como convertir a mayúsculas o minúsculas, reemplazar caracteres, buscar subcadenas, etc.\n\nnombre_mayusculas = mi_nombre.upper()  # Output: \"JUAN\"\nnombre_minusculas = mi_nombre.lower()  # Output: \"juan\"\n\n\nLas cadenas de texto son una herramienta fundamental en la programación, ya que nos permiten trabajar con texto de diversas maneras, desde mostrar mensajes en la pantalla hasta procesar grandes cantidades de datos textuales.\n\n\n1.1.3 Booleanos (bool): Verdadero o Falso\nLos booleanos son un tipo de dato que representa valores de verdad: True (verdadero) o False (falso). Son como un interruptor que puede estar encendido o apagado.\nEn Python, los booleanos se utilizan para:\n\nRepresentar el resultado de comparaciones:\n\nedad = 25\nes_mayor_de_edad = edad &gt;= 18  # es_mayor_de_edad será True\n\nControlar el flujo de ejecución de un programa:\n\nif es_mayor_de_edad:\n    print(\"Puedes votar\")\nelse:\n    print(\"No puedes votar\")\n\nPuedes votar\n\n\nRealizar operaciones lógicas:\n\ntiene_licencia = True\ntiene_auto = False\npuede_conducir = tiene_licencia and tiene_auto  # puede_conducir será False\n\n\nOperadores lógicos:\nPython tiene tres operadores lógicos principales:\n\nand: Devuelve True si ambas expresiones son verdaderas.\nor: Devuelve True si al menos una de las expresiones es verdadera.\nnot: Invierte el valor de verdad de una expresión.\n\nEjemplos:\n\na = True\nb = False\n\na and b  # Output: False\n\nFalse\n\n\n\na or b   # Output: True\n\nTrue\n\n\n\nnot a    # Output: False\n\nFalse\n\n\nLos booleanos y los operadores lógicos son fundamentales para la toma de decisiones en la programación y para crear programas que respondan a diferentes situaciones.",
+    "crumbs": [
+      "I: Fundamentos y herramientas clave",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Elementos de Python</span>"
     ]
   }
 ]

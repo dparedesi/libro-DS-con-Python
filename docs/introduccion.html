@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Daniel P.">
-<meta name="dcterms.date" content="2024-12-30">
 
-<title>Data Science con Python</title>
+<title>Introducción – Data Science con Python</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,7 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./agradecimientos.html" rel="next">
+<link href="./01.elementos-de-python.html" rel="next">
+<link href="./agradecimientos.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -82,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Prefacio</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./introduccion.html">Introducción</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -109,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Prefacio</span></a>
   </div>
 </li>
@@ -121,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./introduccion.html" class="sidebar-item-text sidebar-link">
+  <a href="./introduccion.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Introducción</span></a>
   </div>
 </li>
@@ -152,7 +185,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#prefacio" id="toc-prefacio" class="nav-link active" data-scroll-target="#prefacio">Prefacio</a></li>
+  <li><a href="#adentrándonos-en-el-mundo-de-python" id="toc-adentrándonos-en-el-mundo-de-python" class="nav-link active" data-scroll-target="#adentrándonos-en-el-mundo-de-python">Adentrándonos en el mundo de Python</a>
+  <ul class="collapse">
+  <li><a href="#qué-es-python-paradigmas-y-aplicaciones" id="toc-qué-es-python-paradigmas-y-aplicaciones" class="nav-link" data-scroll-target="#qué-es-python-paradigmas-y-aplicaciones">¿Qué es Python? Paradigmas y aplicaciones</a></li>
+  </ul></li>
+  <li><a href="#instalación-y-entorno-de-desarrollo" id="toc-instalación-y-entorno-de-desarrollo" class="nav-link" data-scroll-target="#instalación-y-entorno-de-desarrollo">Instalación y entorno de desarrollo</a>
+  <ul class="collapse">
+  <li><a href="#instalando-python" id="toc-instalando-python" class="nav-link" data-scroll-target="#instalando-python">Instalando Python</a></li>
+  <li><a href="#entornos-virtuales-tu-espacio-de-trabajo-aislado" id="toc-entornos-virtuales-tu-espacio-de-trabajo-aislado" class="nav-link" data-scroll-target="#entornos-virtuales-tu-espacio-de-trabajo-aislado">Entornos virtuales: tu espacio de trabajo aislado</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -161,26 +202,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Science con Python</h1>
+<h1 class="title">Introducción</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Daniel P. </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">December 30, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -190,27 +219,80 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="prefacio" class="level1 unnumbered">
-<h1 class="unnumbered">Prefacio</h1>
-<p>¡Bienvenido(a) a la primera edición de Data Science con Python!</p>
-<p>Este libro, inicialmente concebido como una recopilación de notas personales para facilitar mi aprendizaje, ha evolucionado hasta convertirse en un recurso integral que cubre desde los fundamentos hasta técnicas avanzadas en ciencia de datos.</p>
-<p>Mientras este libro de Python esta en progreso puedes apoyar el esfuerzo adquiriendo la versión “Data Science con R” en PDF en <a href="https://leanpub.com/dataScienceConR/">leanpub</a>. Además, la compra incluye acceso a futuras actualizaciones y la posibilidad de realizar consultas directas conmigo durante tres meses sobre los temas tratados o su aplicación práctica.</p>
-<p>En este libro trataremos temas cruciales como la ética en ciencia de datos, la reproducibilidad mediante Quarto y el control de versiones con Git y GitHub. Además, hemos fortalecido los contenidos sobre aprendizaje profundo, análisis de series temporales, minería de texto y análisis de sentimientos.</p>
-<p>La versión web disponible en <a href="https://dparedesi.github.io/libro-DS-con-Python/">Github Pages</a> busca democratizar el conocimiento en ciencia de datos. Compártelo y contribuyamos juntos a liberar el conocimiento.</p>
-<p>Esta versión se basa en ejercicios diseñados a partir de experiencias prácticas en clase y actividades de la <a href="https://online-learning.harvard.edu/series/professional-certificate-data-science">Certificación Profesional en Data Science</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> por <strong>HarvardX</strong>. El código utilizado para generar este libro está disponible en GitHub, fomentando la transparencia y la reproducibilidad.</p>
-<p>Hemos mejorado y actualizado los ejercicios, incorporando casos prácticos recientes sobre análisis de redes sociales, cambio climático y minería de texto. Esto permite aplicar inmediatamente lo aprendido a problemas del mundo real.</p>
-<p>Agradezco profundamente a los lectores por sus comentarios y sugerencias, los cuales han sido fundamentales para mejorar esta versión.</p>
-<p>Este libro ha llegado a lectores en México, Colombia, España, Perú y Chile, entre otros países. Espero que sea una herramienta valiosa para avanzar en tu aprendizaje y práctica de ciencia de datos.</p>
-<p>Si tienes preguntas o sugerencias, puedes escribirme a dparedesi@uni.pe. Suelo responder en un plazo máximo de 48 horas.</p>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" alt="Licencia Creative Commons" style="border-width:0"></a><br>Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.</p>
+<p>La ciencia de datos requiere un enfoque multidisciplinario que combina estadística, programación, minería de datos y comprensión del negocio. Este libro está diseñado para ayudarte a desarrollar esas habilidades mediante ejemplos prácticos en R.</p>
+<section id="adentrándonos-en-el-mundo-de-python" class="level2">
+<h2 class="anchored" data-anchor-id="adentrándonos-en-el-mundo-de-python">Adentrándonos en el mundo de Python</h2>
+<p>En la era del Big Data, donde la información se genera a un ritmo vertiginoso, Python se alza como el lenguaje de programación esencial para descifrar el complejo mundo de los datos. No se trata solo de analizar hojas de cálculo; Python te empodera para extraer conocimiento invaluable de terabytes de información, automatizar tareas complejas y construir modelos predictivos que anticipen el futuro.</p>
+<p>Imagina poder:</p>
+<ul>
+<li><strong>Predecir el comportamiento de los clientes:</strong> Con Python, las empresas pueden identificar patrones de compra, segmentar audiencias y personalizar ofertas para aumentar sus ventas.</li>
+<li><strong>Detectar fraudes financieros:</strong> Bancos y instituciones financieras utilizan Python para desarrollar sistemas de detección de anomalías que previenen pérdidas millonarias.</li>
+<li><strong>Diagnosticar enfermedades con mayor precisión:</strong> En el campo de la salud, Python permite analizar imágenes médicas, identificar biomarcadores y desarrollar modelos de diagnóstico temprano.</li>
+<li><strong>Optimizar el tráfico en tiempo real:</strong> Ciudades inteligentes utilizan Python para analizar datos de sensores y cámaras, optimizando el flujo vehicular y reduciendo la congestión.</li>
+</ul>
+<p>Estos son solo algunos ejemplos del poder de Python en acción. A lo largo de este libro, te sumergirás en las herramientas y técnicas que te permitirán abordar desafíos del mundo real y convertirte en un experto en Data Science.</p>
+<section id="qué-es-python-paradigmas-y-aplicaciones" class="level3">
+<h3 class="anchored" data-anchor-id="qué-es-python-paradigmas-y-aplicaciones">¿Qué es Python? Paradigmas y aplicaciones</h3>
+<p>Python es un lenguaje de programación de alto nivel, interpretado y multiparadigma. Esto se traduce en:</p>
+<ul>
+<li><strong>Código legible y fácil de aprender:</strong> Su sintaxis clara y concisa reduce la curva de aprendizaje, permitiéndote concentrarte en la lógica de la programación y no en complejidades sintácticas.</li>
+<li><strong>Desarrollo rápido y flexible:</strong> Al ser interpretado, puedes ejecutar tu código sin necesidad de compilaciones, lo que acelera el proceso de desarrollo y facilita la experimentación.</li>
+<li><strong>Adaptabilidad a diferentes estilos:</strong> Python soporta la programación orientada a objetos, la programación imperativa y la programación funcional, brindándote la flexibilidad para elegir el enfoque más adecuado para cada problema.</li>
+</ul>
+<p><strong>Ventajas de Python para Data Science:</strong> Python se ha convertido en el lenguaje predilecto para Data Science por un conjunto de características que lo hacen incomparable:</p>
+<ul>
+<li><strong>Librerías especializadas:</strong> Python cuenta con un ecosistema rico en librerías que aceleran y simplifican el trabajo del científico de datos. NumPy, Pandas, Scikit-learn, Matplotlib, TensorFlow… ¡un arsenal a tu disposición!</li>
+<li><strong>Comunidad activa y colaborativa:</strong> Miles de desarrolladores y científicos de datos contribuyen a la comunidad Python, creando nuevas herramientas, compartiendo conocimiento y brindando soporte.</li>
+<li><strong>Versatilidad para todo el flujo de trabajo:</strong> Python no solo se utiliza para el análisis y modelado de datos, sino también para otras tareas cruciales en Data Science, como la extracción de datos (web scraping), la limpieza de datos y la automatización de procesos.</li>
+<li><strong>Escalabilidad para proyectos de cualquier tamaño:</strong> Desde análisis exploratorios hasta sistemas de Machine Learning a gran escala, Python se adapta a tus necesidades.</li>
+</ul>
+</section>
+</section>
+<section id="instalación-y-entorno-de-desarrollo" class="level2">
+<h2 class="anchored" data-anchor-id="instalación-y-entorno-de-desarrollo">Instalación y entorno de desarrollo</h2>
+<p>¡Manos a la obra! Antes de sumergirnos en el fascinante mundo de Python, necesitamos preparar el terreno. En esta sección, te guiaremos paso a paso en la instalación de Python y la configuración de tu entorno de desarrollo. No te preocupes, ¡es más sencillo de lo que parece!</p>
+<section id="instalando-python" class="level3">
+<h3 class="anchored" data-anchor-id="instalando-python">Instalando Python</h3>
+<p>Lo primero es instalar Python en tu sistema. Puedes descargar la última versión desde la página oficial de Python (python.org). Asegúrate de seleccionar la versión adecuada para tu sistema operativo (Windows, macOS o Linux). La instalación es sencilla, como cualquier otro programa. Simplemente sigue las instrucciones del instalador.</p>
+<p>Te recomendamos descargar la última versión estable de Python para aprovechar las nuevas características y mejoras.</p>
+<p><img src="img/python-org.png" class="img-fluid"></p>
+</section>
+<section id="entornos-virtuales-tu-espacio-de-trabajo-aislado" class="level3">
+<h3 class="anchored" data-anchor-id="entornos-virtuales-tu-espacio-de-trabajo-aislado">Entornos virtuales: tu espacio de trabajo aislado</h3>
+<p>En el mundo del desarrollo con Python, es fundamental utilizar entornos virtuales. ¿Por qué? Porque te permiten aislar las dependencias de cada proyecto. Imagina que estás trabajando en dos proyectos diferentes, uno que utiliza la versión 2 de una librería y otro que requiere la versión 3. ¡Un caos! Los entornos virtuales evitan este tipo de conflictos y te permiten gestionar las librerías de cada proyecto de forma independiente.</p>
+<p>Para crear un entorno virtual, puedes utilizar <code>venv</code> (incluido en Python 3) o <code>conda</code> (si utilizas Anaconda).</p>
+<p>Con <code>venv</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>python3 <span class="op">-</span>m venv nombre_de_tu_entorno</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Con <code>conda</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>conda create <span class="op">-</span>n nombre_de_tu_entorno python<span class="op">=</span><span class="fl">3.9</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Recuerda activar el entorno virtual antes de empezar a trabajar en tu proyecto.</p>
+<p><strong>IDEs: Elige tu arma</strong></p>
+<p>Un IDE (Entorno de Desarrollo Integrado) es como tu taller de trabajo. Te proporciona herramientas para escribir, ejecutar y depurar tu código de forma eficiente. Existen diferentes IDEs para Python, cada uno con sus propias características y ventajas. Aquí te presentamos algunos de los más populares:</p>
+<ul>
+<li><strong>VS Code:</strong> Un editor ligero y versátil, con una gran cantidad de extensiones para personalizarlo a tu gusto. Es una excelente opción tanto para principiantes como para desarrolladores experimentados.</li>
+</ul>
+<p><img src="img/vs-code.png" class="img-fluid"></p>
+<ul>
+<li><strong>PyCharm:</strong> Un IDE completo y potente, con funciones avanzadas para el análisis de código, la depuración y el desarrollo web. Es ideal para proyectos grandes y complejos.</li>
+</ul>
+<p><img src="img/pycharm.png" class="img-fluid"></p>
+<ul>
+<li><strong>Jupyter Notebook:</strong> Perfecto para la ciencia de datos y el aprendizaje automático. Te permite combinar código, texto y visualizaciones en un único documento. Es muy útil para la experimentación y la creación de prototipos.</li>
+</ul>
+<p><img src="img/jupyter.png" class="img-fluid"></p>
+<ul>
+<li><strong>Google Colaboratory: Python en la nube</strong></li>
+</ul>
+<p>Si buscas una opción aún más accesible, Google Colaboratory es la solución. Es un entorno de desarrollo en la nube que te permite escribir y ejecutar código Python directamente en tu navegador, sin necesidad de instalar nada en tu ordenador. Además, te proporciona acceso gratuito a GPUs (unidades de procesamiento gráfico), lo que lo hace ideal para proyectos de machine learning que requieren gran capacidad de cómputo.</p>
+<p><img src="img/colab.png" class="img-fluid"></p>
+<p>Con estas herramientas a tu disposición, ¡estarás listo para comenzar tu aventura en el mundo de Python! En el próximo apartado, exploraremos los diferentes tipos de datos que puedes manipular con este lenguaje.</p>
 
 
 </section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>https://online-learning.harvard.edu/series/professional-certificate-data-science<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
 </section>
 
 </main> <!-- /main -->
@@ -636,10 +718,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./agradecimientos.html" class="pagination-link" aria-label="Agradecimientos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Agradecimientos</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./agradecimientos.html" class="pagination-link" aria-label="Agradecimientos">
-        <span class="nav-page-text">Agradecimientos</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./01.elementos-de-python.html" class="pagination-link" aria-label="Elementos de Python">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Elementos de Python</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

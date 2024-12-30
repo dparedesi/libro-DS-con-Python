@@ -39,6 +39,7 @@ Indexación y slicing: Acceder a elementos individuales y subconjuntos de la lis
 Iteración: Recorrer los elementos de una lista con bucles for. Comprensión de listas: Crear nuevas listas de forma concisa. Ejemplos de iteración y comprensión de listas con aplicaciones en la ciencia de datos. Operaciones avanzadas: sort(), reverse(), count(), index(). Ejemplo: Utilizar listas para almacenar datos de un experimento científico y luego ordenarlos.
 
 ## Tuplas: Colecciones ordenadas e inmutables
+Contenido
 
 ### Creando tuplas: Sintaxis y ejemplos.
 

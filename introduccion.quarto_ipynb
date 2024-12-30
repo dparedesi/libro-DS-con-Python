@@ -1,0 +1,142 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "#title:\n",
+        "---\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "# Introducción {.unnumbered}\n",
+        "\n",
+        "La ciencia de datos requiere un enfoque multidisciplinario que combina estadística, programación, minería de datos y comprensión del negocio. Este libro está diseñado para ayudarte a desarrollar esas habilidades mediante ejemplos prácticos en Python.\n",
+        "\n",
+        "![](img/multidisciplinaria.png)\n",
+        "\n",
+        "## Adentrándonos en el mundo de Python\n",
+        "\n",
+        "En la era del Big Data, donde la información se genera a un ritmo vertiginoso, Python se alza como el lenguaje de programación esencial para descifrar el complejo mundo de los datos. No se trata solo de analizar hojas de cálculo; Python te empodera para extraer conocimiento invaluable de terabytes de información, automatizar tareas complejas y construir modelos predictivos que anticipen el futuro.\n",
+        "\n",
+        "Imagina poder:\n",
+        "\n",
+        "-   **Predecir el comportamiento de los clientes:** Con Python, las empresas pueden identificar patrones de compra, segmentar audiencias y personalizar ofertas para aumentar sus ventas.\n",
+        "-   **Detectar fraudes financieros:** Bancos y instituciones financieras utilizan Python para desarrollar sistemas de detección de anomalías que previenen pérdidas millonarias.\n",
+        "-   **Diagnosticar enfermedades con mayor precisión:** En el campo de la salud, Python permite analizar imágenes médicas, identificar biomarcadores y desarrollar modelos de diagnóstico temprano.\n",
+        "-   **Optimizar el tráfico en tiempo real:** Ciudades inteligentes utilizan Python para analizar datos de sensores y cámaras, optimizando el flujo vehicular y reduciendo la congestión.\n",
+        "\n",
+        "Estos son solo algunos ejemplos del poder de Python en acción. A lo largo de este libro, te sumergirás en las herramientas y técnicas que te permitirán abordar desafíos del mundo real y convertirte en un experto en Data Science.\n",
+        "\n",
+        "### ¿Qué es Python? Paradigmas y aplicaciones\n",
+        "\n",
+        "Python es un lenguaje de programación de alto nivel, interpretado y multiparadigma. Esto se traduce en:\n",
+        "\n",
+        "-   **Código legible y fácil de aprender:** Su sintaxis clara y concisa reduce la curva de aprendizaje, permitiéndote concentrarte en la lógica de la programación y no en complejidades sintácticas.\n",
+        "-   **Desarrollo rápido y flexible:** Al ser interpretado, puedes ejecutar tu código sin necesidad de compilaciones, lo que acelera el proceso de desarrollo y facilita la experimentación.\n",
+        "-   **Adaptabilidad a diferentes estilos:** Python soporta la programación orientada a objetos, la programación imperativa y la programación funcional, brindándote la flexibilidad para elegir el enfoque más adecuado para cada problema.\n",
+        "\n",
+        "**Ventajas de Python para Data Science:** Python se ha convertido en el lenguaje predilecto para Data Science por un conjunto de características que lo hacen incomparable:\n",
+        "\n",
+        "-   **Librerías especializadas:** Python cuenta con un ecosistema rico en librerías que aceleran y simplifican el trabajo del científico de datos. NumPy, Pandas, Scikit-learn, Matplotlib, TensorFlow… ¡un arsenal a tu disposición!\n",
+        "-   **Comunidad activa y colaborativa:** Miles de desarrolladores y científicos de datos contribuyen a la comunidad Python, creando nuevas herramientas, compartiendo conocimiento y brindando soporte.\n",
+        "-   **Versatilidad para todo el flujo de trabajo:** Python no solo se utiliza para el análisis y modelado de datos, sino también para otras tareas cruciales en Data Science, como la extracción de datos (web scraping), la limpieza de datos y la automatización de procesos.\n",
+        "-   **Escalabilidad para proyectos de cualquier tamaño:** Desde análisis exploratorios hasta sistemas de Machine Learning a gran escala, Python se adapta a tus necesidades.\n",
+        "\n",
+        "## Instalación y entorno de desarrollo\n",
+        "\n",
+        "¡Manos a la obra! Antes de sumergirnos en el fascinante mundo de Python, necesitamos preparar el terreno. En esta sección, te guiaremos paso a paso en la instalación de Python y la configuración de tu entorno de desarrollo. No te preocupes, ¡es más sencillo de lo que parece!\n",
+        "\n",
+        "### Instalando Python\n",
+        "\n",
+        "Lo primero es instalar Python en tu sistema. Puedes descargar la última versión desde la página oficial de Python (python.org). Asegúrate de seleccionar la versión adecuada para tu sistema operativo (Windows, macOS o Linux). La instalación es sencilla, como cualquier otro programa. Simplemente sigue las instrucciones del instalador.\n",
+        "\n",
+        "Te recomendamos descargar la última versión estable de Python para aprovechar las nuevas características y mejoras.\n",
+        "\n",
+        "![](img/python-org.png)\n",
+        "\n",
+        "### Entornos virtuales: tu espacio de trabajo aislado\n",
+        "\n",
+        "En el mundo del desarrollo con Python, es fundamental utilizar entornos virtuales. ¿Por qué? Porque te permiten aislar las dependencias de cada proyecto. Imagina que estás trabajando en dos proyectos diferentes, uno que utiliza la versión 2 de una librería y otro que requiere la versión 3. ¡Un caos! Los entornos virtuales evitan este tipo de conflictos y te permiten gestionar las librerías de cada proyecto de forma independiente.\n",
+        "\n",
+        "Para crear un entorno virtual, puedes utilizar `venv` (incluido en Python 3) o `conda` (si utilizas Anaconda).\n",
+        "\n",
+        "Con `venv`:\n"
+      ],
+      "id": "46124993"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| eval: false\n",
+        "python3 -m venv nombre_de_tu_entorno"
+      ],
+      "id": "33de07a9",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "Con `conda`:\n"
+      ],
+      "id": "e1594ee8"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| eval: false\n",
+        "conda create -n nombre_de_tu_entorno python=3.9 "
+      ],
+      "id": "54c6ded9",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "Recuerda activar el entorno virtual antes de empezar a trabajar en tu proyecto.\n",
+        "\n",
+        "**IDEs: Elige tu arma**\n",
+        "\n",
+        "Un IDE (Entorno de Desarrollo Integrado) es como tu taller de trabajo. Te proporciona herramientas para escribir, ejecutar y depurar tu código de forma eficiente. Existen diferentes IDEs para Python, cada uno con sus propias características y ventajas. Aquí te presentamos algunos de los más populares:\n",
+        "\n",
+        "-   **VS Code:** Un editor ligero y versátil, con una gran cantidad de extensiones para personalizarlo a tu gusto. Es una excelente opción tanto para principiantes como para desarrolladores experimentados.\n",
+        "\n",
+        "![](img/vs-code.png)\n",
+        "\n",
+        "-   **PyCharm:** Un IDE completo y potente, con funciones avanzadas para el análisis de código, la depuración y el desarrollo web. Es ideal para proyectos grandes y complejos.\n",
+        "\n",
+        "![](img/pycharm.png)\n",
+        "\n",
+        "-   **Jupyter Notebook:** Perfecto para la ciencia de datos y el aprendizaje automático. Te permite combinar código, texto y visualizaciones en un único documento. Es muy útil para la experimentación y la creación de prototipos.\n",
+        "\n",
+        "![](img/jupyter.png)\n",
+        "\n",
+        "-   **Google Colaboratory: Python en la nube**\n",
+        "\n",
+        "Si buscas una opción aún más accesible, Google Colaboratory es la solución. Es un entorno de desarrollo en la nube que te permite escribir y ejecutar código Python directamente en tu navegador, sin necesidad de instalar nada en tu ordenador. Además, te proporciona acceso gratuito a GPUs (unidades de procesamiento gráfico), lo que lo hace ideal para proyectos de machine learning que requieren gran capacidad de cómputo.\n",
+        "\n",
+        "![](img/colab.png)\n",
+        "\n",
+        "Con estas herramientas a tu disposición, ¡estarás listo para comenzar tu aventura en el mundo de Python! En el próximo apartado, exploraremos los diferentes tipos de datos que puedes manipular con este lenguaje."
+      ],
+      "id": "e1e302f2"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

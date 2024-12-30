@@ -121,108 +121,108 @@ Los booleanos y los operadores lógicos son fundamentales para la toma de decisi
 
 ## Variables: Almacenando y manipulando información
 
-En el mundo de la programación, las variables son elementos fundamentales que nos permiten almacenar y manipular datos. Piensa en ellas como cajas donde guardas información que luego podrás utilizar en tu programa.  Estas cajas tienen etiquetas (los nombres de las variables) que te permiten acceder a la información de forma rápida y sencilla.
+En el mundo de la programación, las variables son elementos fundamentales que nos permiten almacenar y manipular datos. Piensa en ellas como cajas donde guardas información que luego podrás utilizar en tu programa. Estas cajas tienen etiquetas (los nombres de las variables) que te permiten acceder a la información de forma rápida y sencilla.
 
 ### Nombrando variables: convenciones y buenas prácticas
+
 En Python, al igual que en cualquier lenguaje de programación, es fundamental elegir nombres de variables adecuados. No se trata solo de una cuestión estética, sino de una práctica que impacta directamente en la legibilidad y mantenibilidad del código.
 
 **¿Por qué son importantes los nombres descriptivos?**
 
-Imagina que estás analizando un código con variables llamadas `x`, `y` y `z`. ¿Qué representan? ¿Un número? ¿Una lista de productos? ¿Las coordenadas de un punto en un mapa?  Es imposible saberlo sin un análisis exhaustivo del código.
+Imagina que estás analizando un código con variables llamadas `x`, `y` y `z`. ¿Qué representan? ¿Un número? ¿Una lista de productos? ¿Las coordenadas de un punto en un mapa? Es imposible saberlo sin un análisis exhaustivo del código.
 
 En cambio, si las variables se llaman `edad_cliente`, `lista_productos` y `coordenadas_gps`, su significado es evidente a simple vista. Esto facilita la comprensión del código, tanto para ti como para otros desarrolladores que puedan trabajar en el proyecto.
 
 **Convenciones en Python: snake_case**
 
-En Python, la convención para nombrar variables es utilizar `snake_case.`  Esto significa que los nombres de las variables se escriben en minúsculas, y las palabras se separan con guiones bajos (_).
+En Python, la convención para nombrar variables es utilizar `snake_case.` Esto significa que los nombres de las variables se escriben en minúsculas, y las palabras se separan con guiones bajos (\_).
 
 **Ejemplos:**
 
-* `nombre_cliente`
-* `precio_producto`
-* `fecha_nacimiento`
-* `total_ventas_mensuales`
+-   `nombre_cliente`
+-   `precio_producto`
+-   `fecha_nacimiento`
+-   `total_ventas_mensuales`
 
 **Consejos para nombrar variables:**
 
-* **Claridad ante todo:** El nombre debe reflejar con precisión el tipo de dato que almacena la variable.
-* **Concisión:** Utiliza nombres cortos pero descriptivos.
-* **Consistencia:** Mantén un estilo uniforme en todo tu código.
-* **Evita nombres genéricos:** No uses nombres como `x`, `y`, `z`, `a`, `b`, `c`, a menos que su significado sea evidente en el contexto.
+-   **Claridad ante todo:** El nombre debe reflejar con precisión el tipo de dato que almacena la variable.
+-   **Concisión:** Utiliza nombres cortos pero descriptivos.
+-   **Consistencia:** Mantén un estilo uniforme en todo tu código.
+-   **Evita nombres genéricos:** No uses nombres como `x`, `y`, `z`, `a`, `b`, `c`, a menos que su significado sea evidente en el contexto.
 
 ### Operaciones con variables
+
 Una vez que has elegido un nombre adecuado para tu variable, podemos realizar operaciones con ellas.
 
 **Ejemplos:**
 
-* **Suma de variables:**
-  
-  ```{Python}
-  
-  a = 10
-  b = 20
-  suma = a + b  # La variable suma almacenará el valor 30
-  ```
+-   **Suma de variables:**
 
-* **Concatenación de cadenas:**
+    ```{Python}
 
-  ```{Python}
-  
-  nombre = "Ana"
-  apellido = "García"
-  nombre_completo = nombre + " " + apellido  # La variable nombre_completo almacenará el valor "Ana García"
-  ```
+    a = 10
+    b = 20
+    suma = a + b  # La variable suma almacenará el valor 30
+    ```
 
-* **Actualización multiples:**
-En Python, puedes realizar asignaciones múltiples en una sola línea:
+-   **Concatenación de cadenas:**
 
-  ```{Python}
-  nombre, edad, ciudad = "Laura", 28, "Madrid"
-  ```
+    ```{Python}
 
-Dominar el uso de variables es esencial para cualquier programador.  Te permiten almacenar, manipular y transformar datos de forma eficiente, lo que abre un mundo de posibilidades en el desarrollo de tus proyectos.
+    nombre = "Ana"
+    apellido = "García"
+    nombre_completo = nombre + " " + apellido  # La variable nombre_completo almacenará el valor "Ana García"
+    ```
+
+-   **Actualización multiples:** En Python, puedes realizar asignaciones múltiples en una sola línea:
+
+    ```{Python}
+    nombre, edad, ciudad = "Laura", 28, "Madrid"
+    ```
+
+Dominar el uso de variables es esencial para cualquier programador. Te permiten almacenar, manipular y transformar datos de forma eficiente, lo que abre un mundo de posibilidades en el desarrollo de tus proyectos.
 
 ## Operadores: Aritméticos, relacionales, lógicos
 
-Los operadores son símbolos especiales que le indican al intérprete de Python que realice una operación específica, como una suma, una comparación o una evaluación lógica.  Son herramientas esenciales que te permitirán manipular datos y controlar el flujo de tu programa.
+Los operadores son símbolos especiales que le indican al intérprete de Python que realice una operación específica, como una suma, una comparación o una evaluación lógica. Son herramientas esenciales que te permitirán manipular datos y controlar el flujo de tu programa.
 
 ### Operadores aritméticos
 
 Estos operadores se utilizan para realizar operaciones matemáticas básicas.
 
-| Operador | Descripción           | Ejemplo     | Resultado |
-| -------- | --------------------- | ---------- | -------- |
-| `+`      | Suma                  | `5 + 3`    | `8`      |
-| `-`      | Resta                 | `10 - 4`   | `6`      |
-| `*`      | Multiplicación        | `2 * 7`    | `14`     |
-| `/`      | División              | `15 / 3`   | `5`      |
-| `%`      | Módulo (resto)        | `10 % 3`   | `1`      |
-| `**`     | Potencia              | `2** 3`   | `8`      |
-| `//`     | División entera       | `10 // 3`  | `3`      |
+| Operador | Descripción     | Ejemplo   | Resultado |
+|----------|-----------------|-----------|-----------|
+| `+`      | Suma            | `5 + 3`   | `8`       |
+| `-`      | Resta           | `10 - 4`  | `6`       |
+| `*`      | Multiplicación  | `2 * 7`   | `14`      |
+| `/`      | División        | `15 / 3`  | `5`       |
+| `%`      | Módulo (resto)  | `10 % 3`  | `1`       |
+| `**`     | Potencia        | `2** 3`   | `8`       |
+| `//`     | División entera | `10 // 3` | `3`       |
 
 ### Operadores relacionales
 
 Estos operadores se utilizan para comparar valores y determinar la relación entre ellos. El resultado de una operación relacional es un valor booleano (`True` o `False`).
 
-| Operador | Descripción                | Ejemplo        | Resultado  |
-| -------- | -------------------------- | -------------- | ---------- |
-| `==`     | Igual a                   | `5 == 5`      | `True`    |
-| `!=`     | Distinto de                | `10 != 5`     | `True`    |
-| `>`      | Mayor que                  | `7 > 3`       | `True`    |
-| `<`      | Menor que                  | `2 < 8`       | `True`    |
-| `>=`     | Mayor o igual que          | `5 >= 5`      | `True`    |
-| `<=`     | Menor o igual que          | `4 <= 10`     | `True`    |
+| Operador | Descripción       | Ejemplo   | Resultado |
+|----------|-------------------|-----------|-----------|
+| `==`     | Igual a           | `5 == 5`  | `True`    |
+| `!=`     | Distinto de       | `10 != 5` | `True`    |
+| `>`      | Mayor que         | `7 > 3`   | `True`    |
+| `<`      | Menor que         | `2 < 8`   | `True`    |
+| `>=`     | Mayor o igual que | `5 >= 5`  | `True`    |
+| `<=`     | Menor o igual que | `4 <= 10` | `True`    |
 
 ### Operadores lógicos
 
 Estos operadores se utilizan para combinar expresiones lógicas y crear condiciones más complejas.
 
-| Operador | Descripción                                                                       | Ejemplo                  | Resultado  |
-| -------- | --------------------------------------------------------------------------------- | ------------------------ | ---------- |
-| `and`    | Devuelve `True` si ambas expresiones son verdaderas.                               | `(5 > 3) and (10 < 20)` | `True`    |
-| `or`     | Devuelve `True` si al menos una de las expresiones es verdadera.                     | `(5 < 3) or (10 < 20)`  | `True`    |
-| `not`    | Invierte el valor de la expresión. Si la expresión es `True`, devuelve `False`.     | `not (5 == 5)`          | `False`   |
-
+| Operador | Descripción | Ejemplo | Resultado |
+|----|----|----|----|
+| `and` | Devuelve `True` si ambas expresiones son verdaderas. | `(5 > 3) and (10 < 20)` | `True` |
+| `or` | Devuelve `True` si al menos una de las expresiones es verdadera. | `(5 < 3) or (10 < 20)` | `True` |
+| `not` | Invierte el valor de la expresión. Si la expresión es `True`, devuelve `False`. | `not (5 == 5)` | `False` |
 
 ### Precedencia de operadores
 
@@ -239,17 +239,22 @@ resultado = (5 + 3) * 2  # resultado será 16 (primero se realiza la suma)
 
 Dominar el uso de los operadores es fundamental para escribir código eficiente y efectivo. Te permiten realizar cálculos, comparar valores y controlar el flujo de tu programa de forma precisa.
 
-
 ## Ejercicios
 
-¡Es hora de poner en práctica lo aprendido!  A continuación, encontrarás una serie de ejercicios que te desafiarán a aplicar los conceptos de este capítulo. Recuerda que la práctica es clave para dominar Python.
+¡Es hora de poner en práctica lo aprendido! A continuación, encontrarás una serie de ejercicios que te desafiarán a aplicar los conceptos de este capítulo. Recuerda que la práctica es clave para dominar Python.
 
-**Ejercicio 1:  El precio del café**
+**Ejercicio 1: El precio del café**
 
-Imagina que trabajas en una cafetería.  El precio de un café es de 2.50 euros.  Un cliente te pide 3 cafés y te paga con un billete de 10 euros.  Escribe un programa en Python que calcule cuánto cambio debes darle al cliente.
+Imagina que trabajas en una cafetería. El precio de un café es de 2.50 euros. Un cliente te pide 3 cafés y te paga con un billete de 10 euros. Escribe un programa en Python que calcule cuánto cambio debes darle al cliente.
 
 <details>
-  <summary type="button">Solución</summary>
+
+<summary type="button">
+
+Solución
+
+</summary>
+
 ```{python}
 precio_cafe = 2.50
 cantidad_cafe = 3
@@ -258,14 +263,21 @@ pago_cliente = 10
 cambio = pago_cliente - total
 print("El cambio es:", cambio, "euros")
 ```
+
 </details>
 
-**Ejercicio 2:  El área de un triángulo**
+**Ejercicio 2: El área de un triángulo**
 
-Escribe un programa que calcule el área de un triángulo.  El usuario debe introducir la base y la altura del triángulo.  Recuerda que la fórmula para calcular el área de un triángulo es:  (base * altura) / 2.
+Escribe un programa que calcule el área de un triángulo. El usuario debe introducir la base y la altura del triángulo. Recuerda que la fórmula para calcular el área de un triángulo es: (base \* altura) / 2.
 
 <details>
-  <summary type="button">Solución</summary>
+
+<summary type="button">
+
+Solución
+
+</summary>
+
 ```{python}
 #| eval: false
 base = float(input("Introduce la base del triángulo: "))
@@ -273,28 +285,42 @@ altura = float(input("Introduce la altura del triángulo: "))
 area = (base * altura) / 2
 print("El área del triángulo es:", area)
 ```
+
 </details>
 
-**Ejercicio 3:  Manipulación de cadenas**
+**Ejercicio 3: Manipulación de cadenas**
 
-Crea un programa que pida al usuario su nombre y apellido.  El programa debe mostrar un saludo personalizado que diga:  "¡Hola, [nombre] [apellido]!  Bienvenido/a."
+Crea un programa que pida al usuario su nombre y apellido. El programa debe mostrar un saludo personalizado que diga: "¡Hola, \[nombre\] \[apellido\]! Bienvenido/a."
 
 <details>
-  <summary type="button">Solución</summary>
+
+<summary type="button">
+
+Solución
+
+</summary>
+
 ```{python}
 #| eval: false
 nombre = input("Introduce tu nombre: ")
 apellido = input("Introduce tu apellido: ")
 print(f"¡Hola, {nombre} {apellido}! Bienvenido/a.")
 ```
+
 </details>
 
-**Ejercicio 4:  Mayor de edad**
+**Ejercicio 4: Mayor de edad**
 
-Escribe un programa que pida al usuario su edad.  Si el usuario es mayor de edad (18 años o más), el programa debe mostrar el mensaje "Eres mayor de edad".  En caso contrario, debe mostrar "Eres menor de edad".
+Escribe un programa que pida al usuario su edad. Si el usuario es mayor de edad (18 años o más), el programa debe mostrar el mensaje "Eres mayor de edad". En caso contrario, debe mostrar "Eres menor de edad".
 
 <details>
-  <summary type="button">Solución</summary>
+
+<summary type="button">
+
+Solución
+
+</summary>
+
 ```{python}
 #| eval: false
 edad = int(input("Introduce tu edad: "))
@@ -303,14 +329,21 @@ if edad >= 18:
 else:
   print("Eres menor de edad")
 ```
+
 </details>
 
-**Ejercicio 5:  Adivina el número**
+**Ejercicio 5: Adivina el número**
 
-Crea un programa que genere un número aleatorio entre 1 y 100.  El usuario debe adivinar el número.  El programa debe dar pistas al usuario, indicando si el número que ha introducido es mayor o menor que el número secreto.  El juego termina cuando el usuario adivina el número.
+Crea un programa que genere un número aleatorio entre 1 y 100. El usuario debe adivinar el número. El programa debe dar pistas al usuario, indicando si el número que ha introducido es mayor o menor que el número secreto. El juego termina cuando el usuario adivina el número.
 
 <details>
-  <summary type="button">Solución</summary>
+
+<summary type="button">
+
+Solución
+
+</summary>
+
 ```{python}
 #| eval: false
 import random
@@ -332,8 +365,9 @@ while True:
     print(f"¡Felicidades! Has adivinado el número en {intentos} intentos.")
     break
 ```
+
 </details>
 
 ¡Sigue practicando!
 
-Estos ejercicios son solo una muestra de lo que puedes hacer con los conocimientos adquiridos en este capítulo.  Te animamos a que explores, experimentes y crees tus propios programas para seguir aprendiendo y dominando Python.
+Estos ejercicios son solo una muestra de lo que puedes hacer con los conocimientos adquiridos en este capítulo. Te animamos a que explores, experimentes y crees tus propios programas para seguir aprendiendo y dominando Python.

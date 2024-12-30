@@ -13,6 +13,7 @@ book:
     - part: "I: Fundamentos y herramientas clave" # Opcional
       chapters:
         - 01.elementos-de-python.qmd
+        - 02.estructuras-de-datos.qmd
 
     #- part: "II: Programación Orientada a Objetos" # Opcional
     #  chapters:

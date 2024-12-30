@@ -64,6 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./02.estructuras-de-datos.html" rel="next">
 <link href="./introduccion.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -172,6 +173,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Elementos de Python</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02.estructuras-de-datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Estructuras de Datos</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -243,34 +250,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="cadenas-de-texto-str" class="level3" data-number="1.1.2">
 <h3 data-number="1.1.2" class="anchored" data-anchor-id="cadenas-de-texto-str"><span class="header-section-number">1.1.2</span> Cadenas de texto (<code>str</code>)</h3>
 <p>Las cadenas de texto se utilizan para representar texto. En Python, las cadenas se definen entre comillas simples (<code>'</code>) o comillas dobles (<code>"</code>).</p>
-<div id="b62336ab" class="cell" data-execution_count="1">
+<div id="447e885f" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>mi_nombre <span class="op">=</span> <span class="st">"Juan"</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>mi_ciudad <span class="op">=</span> <span class="st">'Madrid'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Podemos realizar diversas operaciones con las cadenas de texto, como:</p>
 <ul>
 <li><p><strong>Concatenación:</strong> Unir dos o más cadenas.</p>
-<div id="284b5423" class="cell" data-execution_count="2">
+<div id="2f152bd1" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>saludo <span class="op">=</span> <span class="st">"Hola, "</span> <span class="op">+</span> mi_nombre  <span class="co"># Output: "Hola, Juan"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p><strong>Repetición:</strong> Repetir una cadena varias veces.</p>
-<div id="db9babea" class="cell" data-execution_count="3">
+<div id="a65eb6ec" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>eco <span class="op">=</span> <span class="st">"Hola"</span> <span class="op">*</span> <span class="dv">3</span>  <span class="co"># Output: "HolaHolaHola"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p><strong>Indexación:</strong> Acceder a caracteres individuales de una cadena.</p>
-<div id="dd6cbb32" class="cell" data-execution_count="4">
+<div id="6ea39a4d" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>inicial <span class="op">=</span> mi_nombre[<span class="dv">0</span>]  <span class="co"># Output: "J"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p><strong>Rebanado (slicing):</strong> Extraer una porción de una cadena.</p>
-<div id="078d587c" class="cell" data-execution_count="5">
+<div id="2b7e69b8" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>apellido <span class="op">=</span> mi_nombre[<span class="dv">2</span>:<span class="dv">5</span>]  <span class="co"># Output: "an"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p><strong>Longitud:</strong> Obtener la longitud de una cadena (número de caracteres).</p>
-<div id="4b0bcc13" class="cell" data-execution_count="6">
+<div id="ed43569c" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>longitud_nombre <span class="op">=</span> <span class="bu">len</span>(mi_nombre)  <span class="co"># Output: 4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p><strong>Métodos de cadena:</strong> Python ofrece una variedad de métodos para manipular cadenas, como convertir a mayúsculas o minúsculas, reemplazar caracteres, buscar subcadenas, etc.</p>
-<div id="8cbf9479" class="cell" data-execution_count="7">
+<div id="200e94f2" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>nombre_mayusculas <span class="op">=</span> mi_nombre.upper()  <span class="co"># Output: "JUAN"</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>nombre_minusculas <span class="op">=</span> mi_nombre.lower()  <span class="co"># Output: "juan"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
@@ -283,12 +290,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>En Python, los booleanos se utilizan para:</p>
 <ul>
 <li><p>Representar el resultado de comparaciones:</p>
-<div id="ad0ac083" class="cell" data-execution_count="8">
+<div id="10ae39b4" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>edad <span class="op">=</span> <span class="dv">25</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>es_mayor_de_edad <span class="op">=</span> edad <span class="op">&gt;=</span> <span class="dv">18</span>  <span class="co"># es_mayor_de_edad será True</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p>Controlar el flujo de ejecución de un programa:</p>
-<div id="08661eb0" class="cell" data-execution_count="9">
+<div id="8550a5b1" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> es_mayor_de_edad:</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Puedes votar"</span>)</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
@@ -298,7 +305,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div></li>
 <li><p>Realizar operaciones lógicas:</p>
-<div id="18f9934a" class="cell" data-execution_count="10">
+<div id="c1b12bb7" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>tiene_licencia <span class="op">=</span> <span class="va">True</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>tiene_auto <span class="op">=</span> <span class="va">False</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>puede_conducir <span class="op">=</span> tiene_licencia <span class="kw">and</span> tiene_auto  <span class="co"># puede_conducir será False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -312,7 +319,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>not</code>: Invierte el valor de verdad de una expresión.</li>
 </ul>
 <p><strong>Ejemplos:</strong></p>
-<div id="e0a5ce40" class="cell" data-execution_count="11">
+<div id="24551ce1" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="va">True</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="va">False</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -321,13 +328,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="9e6c3521" class="cell" data-execution_count="12">
+<div id="e6f8401f" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>a <span class="kw">or</span> b   <span class="co"># Output: True</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="2d09854d" class="cell" data-execution_count="13">
+<div id="46258f30" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">not</span> a    <span class="co"># Output: False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>False</code></pre>
@@ -501,10 +508,10 @@ nombre_completo = nombre + " " + apellido  # La variable nombre_completo almacen
 <p>Estos operadores se utilizan para combinar expresiones lógicas y crear condiciones más complejas.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 6%">
-<col style="width: 65%">
-<col style="width: 19%">
-<col style="width: 8%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -541,7 +548,7 @@ nombre_completo = nombre + " " + apellido  # La variable nombre_completo almacen
 <p>Al igual que en las matemáticas, los operadores en Python tienen un orden de precedencia. Esto significa que algunos operadores se evalúan antes que otros. Por ejemplo, la multiplicación tiene mayor precedencia que la suma.</p>
 <p>Puedes utilizar paréntesis <code>()</code> para controlar el orden de evaluación de las operaciones.</p>
 <p><strong>Ejemplo:</strong></p>
-<div id="3a501111" class="cell" data-execution_count="14">
+<div id="95cea951" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="dv">5</span> <span class="op">+</span> <span class="dv">3</span> <span class="op">*</span> <span class="dv">2</span>  <span class="co"># resultado será 11 (primero se realiza la multiplicación)</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> (<span class="dv">5</span> <span class="op">+</span> <span class="dv">3</span>) <span class="op">*</span> <span class="dv">2</span>  <span class="co"># resultado será 16 (primero se realiza la suma)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -555,9 +562,9 @@ nombre_completo = nombre + " " + apellido  # La variable nombre_completo almacen
 <p>Imagina que trabajas en una cafetería. El precio de un café es de 2.50 euros. Un cliente te pide 3 cafés y te paga con un billete de 10 euros. Escribe un programa en Python que calcule cuánto cambio debes darle al cliente.</p>
 <details>
 <summary type="button">
-Solución
+<p>Solución</p>
 </summary>
-<div id="ff07ad8a" class="cell" data-execution_count="15">
+<div id="b31d361d" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>precio_cafe <span class="op">=</span> <span class="fl">2.50</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>cantidad_cafe <span class="op">=</span> <span class="dv">3</span></span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>total <span class="op">=</span> precio_cafe <span class="op">*</span> cantidad_cafe</span>
@@ -573,9 +580,9 @@ Solución
 <p>Escribe un programa que calcule el área de un triángulo. El usuario debe introducir la base y la altura del triángulo. Recuerda que la fórmula para calcular el área de un triángulo es: (base * altura) / 2.</p>
 <details>
 <summary type="button">
-Solución
+<p>Solución</p>
 </summary>
-<div id="7088015c" class="cell" data-execution_count="16">
+<div id="4dc9855d" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>base <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"Introduce la base del triángulo: "</span>))</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>altura <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"Introduce la altura del triángulo: "</span>))</span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> (base <span class="op">*</span> altura) <span class="op">/</span> <span class="dv">2</span></span>
@@ -586,9 +593,9 @@ Solución
 <p>Crea un programa que pida al usuario su nombre y apellido. El programa debe mostrar un saludo personalizado que diga: “¡Hola, [nombre] [apellido]! Bienvenido/a.”</p>
 <details>
 <summary type="button">
-Solución
+<p>Solución</p>
 </summary>
-<div id="6d50fae5" class="cell" data-execution_count="17">
+<div id="ccd9edea" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>nombre <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Introduce tu nombre: "</span>)</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>apellido <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Introduce tu apellido: "</span>)</span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"¡Hola, </span><span class="sc">{</span>nombre<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>apellido<span class="sc">}</span><span class="ss">! Bienvenido/a."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -598,9 +605,9 @@ Solución
 <p>Escribe un programa que pida al usuario su edad. Si el usuario es mayor de edad (18 años o más), el programa debe mostrar el mensaje “Eres mayor de edad”. En caso contrario, debe mostrar “Eres menor de edad”.</p>
 <details>
 <summary type="button">
-Solución
+<p>Solución</p>
 </summary>
-<div id="bdc657b3" class="cell" data-execution_count="18">
+<div id="0bcc5e63" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>edad <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Introduce tu edad: "</span>))</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> edad <span class="op">&gt;=</span> <span class="dv">18</span>:</span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">"Eres mayor de edad"</span>)</span>
@@ -612,9 +619,9 @@ Solución
 <p>Crea un programa que genere un número aleatorio entre 1 y 100. El usuario debe adivinar el número. El programa debe dar pistas al usuario, indicando si el número que ha introducido es mayor o menor que el número secreto. El juego termina cuando el usuario adivina el número.</p>
 <details>
 <summary type="button">
-Solución
+<p>Solución</p>
 </summary>
-<div id="9a754406" class="cell" data-execution_count="19">
+<div id="f22cba5f" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>numero_secreto <span class="op">=</span> random.randint(<span class="dv">1</span>, <span class="dv">100</span>)</span>
@@ -1069,6 +1076,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./02.estructuras-de-datos.html" class="pagination-link" aria-label="Estructuras de Datos">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Estructuras de Datos</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

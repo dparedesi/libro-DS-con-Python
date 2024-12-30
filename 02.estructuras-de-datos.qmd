@@ -1,0 +1,73 @@
+# Estructuras de Datos
+
+En el capítulo anterior, aprendimos sobre los tipos de datos básicos en Python: números, cadenas y booleanos. Estos son los bloques de construcción fundamentales, pero en el mundo real, a menudo necesitamos organizar y manipular grandes cantidades de datos. Aquí es donde entran en juego las **estructuras de datos**.
+
+Piensa en las estructuras de datos como contenedores especializados que nos permiten almacenar y organizar colecciones de datos de diferentes maneras. Python ofrece una variedad de estructuras de datos, cada una con sus propias características y ventajas. En este capítulo, exploraremos las cuatro estructuras de datos más importantes: **listas, tuplas, conjuntos y diccionarios**.
+
+## Listas: Colecciones versátiles y dinámicas
+
+Las listas son una de las estructuras de datos más utilizadas en Python. Son colecciones ordenadas y mutables de elementos. "Ordenadas" significa que los elementos de la lista mantienen el orden en que se agregaron. "Mutables" significa que podemos modificar la lista después de crearla: agregar, eliminar o cambiar elementos.
+
+### Creando listas
+
+Crear una lista en Python es muy sencillo. Simplemente encerramos los elementos de la lista entre corchetes `[]`, separados por comas.
+
+**Ejemplos:**
+
+```{python}
+# Una lista vacía
+lista_vacia = []
+
+# Una lista de números
+numeros = [1, 2, 3, 4, 5]
+
+# Una lista de cadenas
+nombres = ["Ana", "Juan", "Pedro"]
+
+# Una lista mixta
+mixta = [1, "Hola", 3.14, True]
+```
+
+Como puedes ver, una lista puede contener elementos de diferentes tipos de datos, incluso otras listas. Esta flexibilidad es una de las razones por las que las listas son tan útiles.
+
+### Accediendo a elementos, modificando y agregando:
+
+Indexación y slicing: Acceder a elementos individuales y subconjuntos de la lista. Métodos para modificar listas: append(), insert(), remove(), pop(), extend(). Ejemplos prácticos de manipulación de listas.
+
+### Operaciones con listas:
+
+Iteración: Recorrer los elementos de una lista con bucles for. Comprensión de listas: Crear nuevas listas de forma concisa. Ejemplos de iteración y comprensión de listas con aplicaciones en la ciencia de datos. Operaciones avanzadas: sort(), reverse(), count(), index(). Ejemplo: Utilizar listas para almacenar datos de un experimento científico y luego ordenarlos.
+
+## Tuplas: Colecciones ordenadas e inmutables
+
+### Creando tuplas: Sintaxis y ejemplos.
+
+### Comparación con las listas: Ventajas y desventajas en términos de mutabilidad y rendimiento.
+
+### Casos de uso específicos: Ejemplos en ciencia de datos donde la inmutabilidad de las tuplas es beneficiosa (ej: representar coordenadas geográficas).
+
+## Conjuntos: Colecciones para elementos únicos
+
+### Creando conjuntos: Sintaxis y ejemplos.
+
+### Operaciones con conjuntos: Unión, intersección, diferencia, diferencia simétrica con ejemplos visuales.
+
+### Aplicaciones prácticas: Eliminar duplicados de un conjunto de datos, realizar operaciones de conjuntos en datos categóricos.
+
+## Diccionarios: Almacenando datos en pares clave-valor
+
+### Creando diccionarios: Sintaxis y ejemplos.
+
+### Accediendo a valores: Utilizar claves para acceder a los valores.
+
+### Modificando y agregando elementos: Añadir, modificar y eliminar pares clave-valor.
+
+### Iterando sobre diccionarios: Recorrer las claves y valores.
+
+### Métodos útiles: keys(), values(), items().
+
+### Conexión con Pandas: Mostrar cómo los diccionarios son similares a las estructuras de datos de Pandas (DataFrames) y cómo se pueden convertir entre sí. Ejemplo: Crear un diccionario con datos de ventas y convertirlo en un DataFrame de Pandas.
+
+## Ejercicios: Dominando las estructuras de datos
+
+Ejercicios de diferentes niveles que cubran todos los tipos de estructuras de datos. Ejercicios que simulen situaciones del mundo real en el ámbito de la ciencia de datos, como el análisis de datos de redes sociales o el procesamiento de datos de un sensor. Ejemplos de código conciso y eficiente: Utilizar la comprensión de listas para filtrar datos. Utilizar métodos de conjuntos para realizar análisis de datos categóricos. Utilizar diccionarios para almacenar y acceder a información de forma eficiente.

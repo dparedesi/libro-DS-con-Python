@@ -113,5 +113,71 @@
       "I: Fundamentos y herramientas clave",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Elementos de Python</span>"
     ]
+  },
+  {
+    "objectID": "02.estructuras-de-datos.html",
+    "href": "02.estructuras-de-datos.html",
+    "title": "2  Estructuras de Datos",
+    "section": "",
+    "text": "2.1 Listas: Colecciones versátiles y dinámicas\nLas listas son una de las estructuras de datos más utilizadas en Python. Son colecciones ordenadas y mutables de elementos. “Ordenadas” significa que los elementos de la lista mantienen el orden en que se agregaron. “Mutables” significa que podemos modificar la lista después de crearla: agregar, eliminar o cambiar elementos.",
+    "crumbs": [
+      "I: Fundamentos y herramientas clave",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estructuras de Datos</span>"
+    ]
+  },
+  {
+    "objectID": "02.estructuras-de-datos.html#listas-colecciones-versátiles-y-dinámicas",
+    "href": "02.estructuras-de-datos.html#listas-colecciones-versátiles-y-dinámicas",
+    "title": "2  Estructuras de Datos",
+    "section": "",
+    "text": "2.1.1 Creando listas\nCrear una lista en Python es muy sencillo. Simplemente encerramos los elementos de la lista entre corchetes [], separados por comas.\nEjemplos:\n\n# Una lista vacía\nlista_vacia = []\n\n# Una lista de números\nnumeros = [1, 2, 3, 4, 5]\n\n# Una lista de cadenas\nnombres = [\"Ana\", \"Juan\", \"Pedro\"]\n\n# Una lista mixta\nmixta = [1, \"Hola\", 3.14, True]\n\nComo puedes ver, una lista puede contener elementos de diferentes tipos de datos, incluso otras listas. Esta flexibilidad es una de las razones por las que las listas son tan útiles.\n\n\n2.1.2 Accediendo a elementos, modificando y agregando:\nIndexación y slicing: Acceder a elementos individuales y subconjuntos de la lista. Métodos para modificar listas: append(), insert(), remove(), pop(), extend(). Ejemplos prácticos de manipulación de listas.\n\n\n2.1.3 Operaciones con listas:\nIteración: Recorrer los elementos de una lista con bucles for. Comprensión de listas: Crear nuevas listas de forma concisa. Ejemplos de iteración y comprensión de listas con aplicaciones en la ciencia de datos. Operaciones avanzadas: sort(), reverse(), count(), index(). Ejemplo: Utilizar listas para almacenar datos de un experimento científico y luego ordenarlos.",
+    "crumbs": [
+      "I: Fundamentos y herramientas clave",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estructuras de Datos</span>"
+    ]
+  },
+  {
+    "objectID": "02.estructuras-de-datos.html#tuplas-colecciones-ordenadas-e-inmutables",
+    "href": "02.estructuras-de-datos.html#tuplas-colecciones-ordenadas-e-inmutables",
+    "title": "2  Estructuras de Datos",
+    "section": "2.2 Tuplas: Colecciones ordenadas e inmutables",
+    "text": "2.2 Tuplas: Colecciones ordenadas e inmutables\n\n2.2.1 Creando tuplas: Sintaxis y ejemplos.\n\n\n2.2.2 Comparación con las listas: Ventajas y desventajas en términos de mutabilidad y rendimiento.\n\n\n2.2.3 Casos de uso específicos: Ejemplos en ciencia de datos donde la inmutabilidad de las tuplas es beneficiosa (ej: representar coordenadas geográficas).",
+    "crumbs": [
+      "I: Fundamentos y herramientas clave",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estructuras de Datos</span>"
+    ]
+  },
+  {
+    "objectID": "02.estructuras-de-datos.html#conjuntos-colecciones-para-elementos-únicos",
+    "href": "02.estructuras-de-datos.html#conjuntos-colecciones-para-elementos-únicos",
+    "title": "2  Estructuras de Datos",
+    "section": "2.3 Conjuntos: Colecciones para elementos únicos",
+    "text": "2.3 Conjuntos: Colecciones para elementos únicos\n\n2.3.1 Creando conjuntos: Sintaxis y ejemplos.\n\n\n2.3.2 Operaciones con conjuntos: Unión, intersección, diferencia, diferencia simétrica con ejemplos visuales.\n\n\n2.3.3 Aplicaciones prácticas: Eliminar duplicados de un conjunto de datos, realizar operaciones de conjuntos en datos categóricos.",
+    "crumbs": [
+      "I: Fundamentos y herramientas clave",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estructuras de Datos</span>"
+    ]
+  },
+  {
+    "objectID": "02.estructuras-de-datos.html#diccionarios-almacenando-datos-en-pares-clave-valor",
+    "href": "02.estructuras-de-datos.html#diccionarios-almacenando-datos-en-pares-clave-valor",
+    "title": "2  Estructuras de Datos",
+    "section": "2.4 Diccionarios: Almacenando datos en pares clave-valor",
+    "text": "2.4 Diccionarios: Almacenando datos en pares clave-valor\n\n2.4.1 Creando diccionarios: Sintaxis y ejemplos.\n\n\n2.4.2 Accediendo a valores: Utilizar claves para acceder a los valores.\n\n\n2.4.3 Modificando y agregando elementos: Añadir, modificar y eliminar pares clave-valor.\n\n\n2.4.4 Iterando sobre diccionarios: Recorrer las claves y valores.\n\n\n2.4.5 Métodos útiles: keys(), values(), items().\n\n\n2.4.6 Conexión con Pandas: Mostrar cómo los diccionarios son similares a las estructuras de datos de Pandas (DataFrames) y cómo se pueden convertir entre sí. Ejemplo: Crear un diccionario con datos de ventas y convertirlo en un DataFrame de Pandas.",
+    "crumbs": [
+      "I: Fundamentos y herramientas clave",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estructuras de Datos</span>"
+    ]
+  },
+  {
+    "objectID": "02.estructuras-de-datos.html#ejercicios-dominando-las-estructuras-de-datos",
+    "href": "02.estructuras-de-datos.html#ejercicios-dominando-las-estructuras-de-datos",
+    "title": "2  Estructuras de Datos",
+    "section": "2.5 Ejercicios: Dominando las estructuras de datos",
+    "text": "2.5 Ejercicios: Dominando las estructuras de datos\nEjercicios de diferentes niveles que cubran todos los tipos de estructuras de datos. Ejercicios que simulen situaciones del mundo real en el ámbito de la ciencia de datos, como el análisis de datos de redes sociales o el procesamiento de datos de un sensor. Ejemplos de código conciso y eficiente: Utilizar la comprensión de listas para filtrar datos. Utilizar métodos de conjuntos para realizar análisis de datos categóricos. Utilizar diccionarios para almacenar y acceder a información de forma eficiente.",
+    "crumbs": [
+      "I: Fundamentos y herramientas clave",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Estructuras de Datos</span>"
+    ]
   }
 ]

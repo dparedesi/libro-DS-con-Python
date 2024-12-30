@@ -190,6 +190,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#cadenas-de-texto-str" id="toc-cadenas-de-texto-str" class="nav-link" data-scroll-target="#cadenas-de-texto-str"><span class="header-section-number">1.1.2</span> Cadenas de texto (<code>str</code>)</a></li>
   <li><a href="#booleanos-bool-verdadero-o-falso" id="toc-booleanos-bool-verdadero-o-falso" class="nav-link" data-scroll-target="#booleanos-bool-verdadero-o-falso"><span class="header-section-number">1.1.3</span> Booleanos <code>(bool)</code>: Verdadero o Falso</a></li>
   </ul></li>
+  <li><a href="#variables-almacenando-y-manipulando-información" id="toc-variables-almacenando-y-manipulando-información" class="nav-link" data-scroll-target="#variables-almacenando-y-manipulando-información"><span class="header-section-number">1.2</span> Variables: Almacenando y manipulando información</a>
+  <ul class="collapse">
+  <li><a href="#nombrando-variables-convenciones-y-buenas-prácticas" id="toc-nombrando-variables-convenciones-y-buenas-prácticas" class="nav-link" data-scroll-target="#nombrando-variables-convenciones-y-buenas-prácticas"><span class="header-section-number">1.2.1</span> Nombrando variables: convenciones y buenas prácticas</a></li>
+  <li><a href="#operaciones-con-variables" id="toc-operaciones-con-variables" class="nav-link" data-scroll-target="#operaciones-con-variables"><span class="header-section-number">1.2.2</span> Operaciones con variables</a></li>
+  </ul></li>
+  <li><a href="#operadores-aritméticos-relacionales-lógicos" id="toc-operadores-aritméticos-relacionales-lógicos" class="nav-link" data-scroll-target="#operadores-aritméticos-relacionales-lógicos"><span class="header-section-number">1.3</span> Operadores: Aritméticos, relacionales, lógicos</a>
+  <ul class="collapse">
+  <li><a href="#operadores-aritméticos" id="toc-operadores-aritméticos" class="nav-link" data-scroll-target="#operadores-aritméticos"><span class="header-section-number">1.3.1</span> Operadores aritméticos</a></li>
+  <li><a href="#operadores-relacionales" id="toc-operadores-relacionales" class="nav-link" data-scroll-target="#operadores-relacionales"><span class="header-section-number">1.3.2</span> Operadores relacionales</a></li>
+  <li><a href="#operadores-lógicos" id="toc-operadores-lógicos" class="nav-link" data-scroll-target="#operadores-lógicos"><span class="header-section-number">1.3.3</span> Operadores lógicos</a></li>
+  <li><a href="#precedencia-de-operadores" id="toc-precedencia-de-operadores" class="nav-link" data-scroll-target="#precedencia-de-operadores"><span class="header-section-number">1.3.4</span> Precedencia de operadores</a></li>
+  </ul></li>
+  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">1.4</span> Ejercicios</a></li>
   </ul>
 </nav>
     </div>
@@ -230,34 +243,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="cadenas-de-texto-str" class="level3" data-number="1.1.2">
 <h3 data-number="1.1.2" class="anchored" data-anchor-id="cadenas-de-texto-str"><span class="header-section-number">1.1.2</span> Cadenas de texto (<code>str</code>)</h3>
 <p>Las cadenas de texto se utilizan para representar texto. En Python, las cadenas se definen entre comillas simples (<code>'</code>) o comillas dobles (<code>"</code>).</p>
-<div id="24ccdc6b" class="cell" data-execution_count="1">
+<div id="b62336ab" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>mi_nombre <span class="op">=</span> <span class="st">"Juan"</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>mi_ciudad <span class="op">=</span> <span class="st">'Madrid'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Podemos realizar diversas operaciones con las cadenas de texto, como:</p>
 <ul>
 <li><p><strong>Concatenación:</strong> Unir dos o más cadenas.</p>
-<div id="9d18b94e" class="cell" data-execution_count="2">
+<div id="284b5423" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>saludo <span class="op">=</span> <span class="st">"Hola, "</span> <span class="op">+</span> mi_nombre  <span class="co"># Output: "Hola, Juan"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p><strong>Repetición:</strong> Repetir una cadena varias veces.</p>
-<div id="dcab1293" class="cell" data-execution_count="3">
+<div id="db9babea" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>eco <span class="op">=</span> <span class="st">"Hola"</span> <span class="op">*</span> <span class="dv">3</span>  <span class="co"># Output: "HolaHolaHola"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p><strong>Indexación:</strong> Acceder a caracteres individuales de una cadena.</p>
-<div id="7931168a" class="cell" data-execution_count="4">
+<div id="dd6cbb32" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>inicial <span class="op">=</span> mi_nombre[<span class="dv">0</span>]  <span class="co"># Output: "J"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p><strong>Rebanado (slicing):</strong> Extraer una porción de una cadena.</p>
-<div id="a4fe37b2" class="cell" data-execution_count="5">
+<div id="078d587c" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>apellido <span class="op">=</span> mi_nombre[<span class="dv">2</span>:<span class="dv">5</span>]  <span class="co"># Output: "an"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p><strong>Longitud:</strong> Obtener la longitud de una cadena (número de caracteres).</p>
-<div id="be868e88" class="cell" data-execution_count="6">
+<div id="4b0bcc13" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>longitud_nombre <span class="op">=</span> <span class="bu">len</span>(mi_nombre)  <span class="co"># Output: 4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p><strong>Métodos de cadena:</strong> Python ofrece una variedad de métodos para manipular cadenas, como convertir a mayúsculas o minúsculas, reemplazar caracteres, buscar subcadenas, etc.</p>
-<div id="c0d77682" class="cell" data-execution_count="7">
+<div id="8cbf9479" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>nombre_mayusculas <span class="op">=</span> mi_nombre.upper()  <span class="co"># Output: "JUAN"</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>nombre_minusculas <span class="op">=</span> mi_nombre.lower()  <span class="co"># Output: "juan"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
@@ -270,12 +283,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>En Python, los booleanos se utilizan para:</p>
 <ul>
 <li><p>Representar el resultado de comparaciones:</p>
-<div id="54fbfae8" class="cell" data-execution_count="8">
+<div id="ad0ac083" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>edad <span class="op">=</span> <span class="dv">25</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>es_mayor_de_edad <span class="op">=</span> edad <span class="op">&gt;=</span> <span class="dv">18</span>  <span class="co"># es_mayor_de_edad será True</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p>Controlar el flujo de ejecución de un programa:</p>
-<div id="5a0d12ba" class="cell" data-execution_count="9">
+<div id="08661eb0" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> es_mayor_de_edad:</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Puedes votar"</span>)</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
@@ -285,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div></li>
 <li><p>Realizar operaciones lógicas:</p>
-<div id="32d693d6" class="cell" data-execution_count="10">
+<div id="18f9934a" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>tiene_licencia <span class="op">=</span> <span class="va">True</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>tiene_auto <span class="op">=</span> <span class="va">False</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>puede_conducir <span class="op">=</span> tiene_licencia <span class="kw">and</span> tiene_auto  <span class="co"># puede_conducir será False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -299,7 +312,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>not</code>: Invierte el valor de verdad de una expresión.</li>
 </ul>
 <p><strong>Ejemplos:</strong></p>
-<div id="75ffb80f" class="cell" data-execution_count="11">
+<div id="e0a5ce40" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="va">True</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="va">False</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -308,22 +321,324 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="803fcc59" class="cell" data-execution_count="12">
+<div id="9e6c3521" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>a <span class="kw">or</span> b   <span class="co"># Output: True</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="4273efe1" class="cell" data-execution_count="13">
+<div id="2d09854d" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">not</span> a    <span class="co"># Output: False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>False</code></pre>
 </div>
 </div>
 <p>Los booleanos y los operadores lógicos son fundamentales para la toma de decisiones en la programación y para crear programas que respondan a diferentes situaciones.</p>
-
-
 </section>
+</section>
+<section id="variables-almacenando-y-manipulando-información" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="variables-almacenando-y-manipulando-información"><span class="header-section-number">1.2</span> Variables: Almacenando y manipulando información</h2>
+<p>En el mundo de la programación, las variables son elementos fundamentales que nos permiten almacenar y manipular datos. Piensa en ellas como cajas donde guardas información que luego podrás utilizar en tu programa. Estas cajas tienen etiquetas (los nombres de las variables) que te permiten acceder a la información de forma rápida y sencilla.</p>
+<section id="nombrando-variables-convenciones-y-buenas-prácticas" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="nombrando-variables-convenciones-y-buenas-prácticas"><span class="header-section-number">1.2.1</span> Nombrando variables: convenciones y buenas prácticas</h3>
+<p>En Python, al igual que en cualquier lenguaje de programación, es fundamental elegir nombres de variables adecuados. No se trata solo de una cuestión estética, sino de una práctica que impacta directamente en la legibilidad y mantenibilidad del código.</p>
+<p><strong>¿Por qué son importantes los nombres descriptivos?</strong></p>
+<p>Imagina que estás analizando un código con variables llamadas <code>x</code>, <code>y</code> y <code>z</code>. ¿Qué representan? ¿Un número? ¿Una lista de productos? ¿Las coordenadas de un punto en un mapa? Es imposible saberlo sin un análisis exhaustivo del código.</p>
+<p>En cambio, si las variables se llaman <code>edad_cliente</code>, <code>lista_productos</code> y <code>coordenadas_gps</code>, su significado es evidente a simple vista. Esto facilita la comprensión del código, tanto para ti como para otros desarrolladores que puedan trabajar en el proyecto.</p>
+<p><strong>Convenciones en Python: snake_case</strong></p>
+<p>En Python, la convención para nombrar variables es utilizar <code>snake_case.</code> Esto significa que los nombres de las variables se escriben en minúsculas, y las palabras se separan con guiones bajos (_).</p>
+<p><strong>Ejemplos:</strong></p>
+<ul>
+<li><code>nombre_cliente</code></li>
+<li><code>precio_producto</code></li>
+<li><code>fecha_nacimiento</code></li>
+<li><code>total_ventas_mensuales</code></li>
+</ul>
+<p><strong>Consejos para nombrar variables:</strong></p>
+<ul>
+<li><strong>Claridad ante todo:</strong> El nombre debe reflejar con precisión el tipo de dato que almacena la variable.</li>
+<li><strong>Concisión:</strong> Utiliza nombres cortos pero descriptivos.</li>
+<li><strong>Consistencia:</strong> Mantén un estilo uniforme en todo tu código.</li>
+<li><strong>Evita nombres genéricos:</strong> No uses nombres como <code>x</code>, <code>y</code>, <code>z</code>, <code>a</code>, <code>b</code>, <code>c</code>, a menos que su significado sea evidente en el contexto.</li>
+</ul>
+</section>
+<section id="operaciones-con-variables" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="operaciones-con-variables"><span class="header-section-number">1.2.2</span> Operaciones con variables</h3>
+<p>Una vez que has elegido un nombre adecuado para tu variable, podemos realizar operaciones con ellas.</p>
+<p><strong>Ejemplos:</strong></p>
+<ul>
+<li><p><strong>Suma de variables:</strong></p>
+<pre class="{Python}"><code>
+a = 10
+b = 20
+suma = a + b  # La variable suma almacenará el valor 30</code></pre></li>
+<li><p><strong>Concatenación de cadenas:</strong></p>
+<pre class="{Python}"><code>
+nombre = "Ana"
+apellido = "García"
+nombre_completo = nombre + " " + apellido  # La variable nombre_completo almacenará el valor "Ana García"</code></pre></li>
+<li><p><strong>Actualización multiples:</strong> En Python, puedes realizar asignaciones múltiples en una sola línea:</p>
+<pre class="{Python}"><code>nombre, edad, ciudad = "Laura", 28, "Madrid"</code></pre></li>
+</ul>
+<p>Dominar el uso de variables es esencial para cualquier programador. Te permiten almacenar, manipular y transformar datos de forma eficiente, lo que abre un mundo de posibilidades en el desarrollo de tus proyectos.</p>
+</section>
+</section>
+<section id="operadores-aritméticos-relacionales-lógicos" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="operadores-aritméticos-relacionales-lógicos"><span class="header-section-number">1.3</span> Operadores: Aritméticos, relacionales, lógicos</h2>
+<p>Los operadores son símbolos especiales que le indican al intérprete de Python que realice una operación específica, como una suma, una comparación o una evaluación lógica. Son herramientas esenciales que te permitirán manipular datos y controlar el flujo de tu programa.</p>
+<section id="operadores-aritméticos" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="operadores-aritméticos"><span class="header-section-number">1.3.1</span> Operadores aritméticos</h3>
+<p>Estos operadores se utilizan para realizar operaciones matemáticas básicas.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Operador</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>+</code></td>
+<td>Suma</td>
+<td><code>5 + 3</code></td>
+<td><code>8</code></td>
+</tr>
+<tr class="even">
+<td><code>-</code></td>
+<td>Resta</td>
+<td><code>10 - 4</code></td>
+<td><code>6</code></td>
+</tr>
+<tr class="odd">
+<td><code>*</code></td>
+<td>Multiplicación</td>
+<td><code>2 * 7</code></td>
+<td><code>14</code></td>
+</tr>
+<tr class="even">
+<td><code>/</code></td>
+<td>División</td>
+<td><code>15 / 3</code></td>
+<td><code>5</code></td>
+</tr>
+<tr class="odd">
+<td><code>%</code></td>
+<td>Módulo (resto)</td>
+<td><code>10 % 3</code></td>
+<td><code>1</code></td>
+</tr>
+<tr class="even">
+<td><code>**</code></td>
+<td>Potencia</td>
+<td><code>2** 3</code></td>
+<td><code>8</code></td>
+</tr>
+<tr class="odd">
+<td><code>//</code></td>
+<td>División entera</td>
+<td><code>10 // 3</code></td>
+<td><code>3</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="operadores-relacionales" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="operadores-relacionales"><span class="header-section-number">1.3.2</span> Operadores relacionales</h3>
+<p>Estos operadores se utilizan para comparar valores y determinar la relación entre ellos. El resultado de una operación relacional es un valor booleano (<code>True</code> o <code>False</code>).</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Operador</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>==</code></td>
+<td>Igual a</td>
+<td><code>5 == 5</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="even">
+<td><code>!=</code></td>
+<td>Distinto de</td>
+<td><code>10 != 5</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="odd">
+<td><code>&gt;</code></td>
+<td>Mayor que</td>
+<td><code>7 &gt; 3</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="even">
+<td><code>&lt;</code></td>
+<td>Menor que</td>
+<td><code>2 &lt; 8</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="odd">
+<td><code>&gt;=</code></td>
+<td>Mayor o igual que</td>
+<td><code>5 &gt;= 5</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="even">
+<td><code>&lt;=</code></td>
+<td>Menor o igual que</td>
+<td><code>4 &lt;= 10</code></td>
+<td><code>True</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="operadores-lógicos" class="level3" data-number="1.3.3">
+<h3 data-number="1.3.3" class="anchored" data-anchor-id="operadores-lógicos"><span class="header-section-number">1.3.3</span> Operadores lógicos</h3>
+<p>Estos operadores se utilizan para combinar expresiones lógicas y crear condiciones más complejas.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 65%">
+<col style="width: 19%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Operador</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>and</code></td>
+<td>Devuelve <code>True</code> si ambas expresiones son verdaderas.</td>
+<td><code>(5 &gt; 3) and (10 &lt; 20)</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="even">
+<td><code>or</code></td>
+<td>Devuelve <code>True</code> si al menos una de las expresiones es verdadera.</td>
+<td><code>(5 &lt; 3) or (10 &lt; 20)</code></td>
+<td><code>True</code></td>
+</tr>
+<tr class="odd">
+<td><code>not</code></td>
+<td>Invierte el valor de la expresión. Si la expresión es <code>True</code>, devuelve <code>False</code>.</td>
+<td><code>not (5 == 5)</code></td>
+<td><code>False</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="precedencia-de-operadores" class="level3" data-number="1.3.4">
+<h3 data-number="1.3.4" class="anchored" data-anchor-id="precedencia-de-operadores"><span class="header-section-number">1.3.4</span> Precedencia de operadores</h3>
+<p>Al igual que en las matemáticas, los operadores en Python tienen un orden de precedencia. Esto significa que algunos operadores se evalúan antes que otros. Por ejemplo, la multiplicación tiene mayor precedencia que la suma.</p>
+<p>Puedes utilizar paréntesis <code>()</code> para controlar el orden de evaluación de las operaciones.</p>
+<p><strong>Ejemplo:</strong></p>
+<div id="3a501111" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> <span class="dv">5</span> <span class="op">+</span> <span class="dv">3</span> <span class="op">*</span> <span class="dv">2</span>  <span class="co"># resultado será 11 (primero se realiza la multiplicación)</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>resultado <span class="op">=</span> (<span class="dv">5</span> <span class="op">+</span> <span class="dv">3</span>) <span class="op">*</span> <span class="dv">2</span>  <span class="co"># resultado será 16 (primero se realiza la suma)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Dominar el uso de los operadores es fundamental para escribir código eficiente y efectivo. Te permiten realizar cálculos, comparar valores y controlar el flujo de tu programa de forma precisa.</p>
+</section>
+</section>
+<section id="ejercicios" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="ejercicios"><span class="header-section-number">1.4</span> Ejercicios</h2>
+<p>¡Es hora de poner en práctica lo aprendido! A continuación, encontrarás una serie de ejercicios que te desafiarán a aplicar los conceptos de este capítulo. Recuerda que la práctica es clave para dominar Python.</p>
+<p><strong>Ejercicio 1: El precio del café</strong></p>
+<p>Imagina que trabajas en una cafetería. El precio de un café es de 2.50 euros. Un cliente te pide 3 cafés y te paga con un billete de 10 euros. Escribe un programa en Python que calcule cuánto cambio debes darle al cliente.</p>
+<details>
+<summary type="button">
+Solución
+</summary>
+<div id="ff07ad8a" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>precio_cafe <span class="op">=</span> <span class="fl">2.50</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>cantidad_cafe <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>total <span class="op">=</span> precio_cafe <span class="op">*</span> cantidad_cafe</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>pago_cliente <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>cambio <span class="op">=</span> pago_cliente <span class="op">-</span> total</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"El cambio es:"</span>, cambio, <span class="st">"euros"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>El cambio es: 2.5 euros</code></pre>
+</div>
+</div>
+</details>
+<p><strong>Ejercicio 2: El área de un triángulo</strong></p>
+<p>Escribe un programa que calcule el área de un triángulo. El usuario debe introducir la base y la altura del triángulo. Recuerda que la fórmula para calcular el área de un triángulo es: (base * altura) / 2.</p>
+<details>
+<summary type="button">
+Solución
+</summary>
+<div id="7088015c" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>base <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"Introduce la base del triángulo: "</span>))</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>altura <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"Introduce la altura del triángulo: "</span>))</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> (base <span class="op">*</span> altura) <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"El área del triángulo es:"</span>, area)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</details>
+<p><strong>Ejercicio 3: Manipulación de cadenas</strong></p>
+<p>Crea un programa que pida al usuario su nombre y apellido. El programa debe mostrar un saludo personalizado que diga: “¡Hola, [nombre] [apellido]! Bienvenido/a.”</p>
+<details>
+<summary type="button">
+Solución
+</summary>
+<div id="6d50fae5" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>nombre <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Introduce tu nombre: "</span>)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>apellido <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Introduce tu apellido: "</span>)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"¡Hola, </span><span class="sc">{</span>nombre<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>apellido<span class="sc">}</span><span class="ss">! Bienvenido/a."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</details>
+<p><strong>Ejercicio 4: Mayor de edad</strong></p>
+<p>Escribe un programa que pida al usuario su edad. Si el usuario es mayor de edad (18 años o más), el programa debe mostrar el mensaje “Eres mayor de edad”. En caso contrario, debe mostrar “Eres menor de edad”.</p>
+<details>
+<summary type="button">
+Solución
+</summary>
+<div id="bdc657b3" class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>edad <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Introduce tu edad: "</span>))</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> edad <span class="op">&gt;=</span> <span class="dv">18</span>:</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">"Eres mayor de edad"</span>)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">"Eres menor de edad"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</details>
+<p><strong>Ejercicio 5: Adivina el número</strong></p>
+<p>Crea un programa que genere un número aleatorio entre 1 y 100. El usuario debe adivinar el número. El programa debe dar pistas al usuario, indicando si el número que ha introducido es mayor o menor que el número secreto. El juego termina cuando el usuario adivina el número.</p>
+<details>
+<summary type="button">
+Solución
+</summary>
+<div id="9a754406" class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>numero_secreto <span class="op">=</span> random.randint(<span class="dv">1</span>, <span class="dv">100</span>)</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>intentos <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"¡He pensado un número entre 1 y 100!"</span>)</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>  intentos <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>  numero_usuario <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Adivina el número: "</span>))</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> numero_usuario <span class="op">&lt;</span> numero_secreto:</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"El número es mayor."</span>)</span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">elif</span> numero_usuario <span class="op">&gt;</span> numero_secreto:</span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"El número es menor."</span>)</span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"¡Felicidades! Has adivinado el número en </span><span class="sc">{</span>intentos<span class="sc">}</span><span class="ss"> intentos."</span>)</span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">break</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</details>
+<p>¡Sigue practicando!</p>
+<p>Estos ejercicios son solo una muestra de lo que puedes hacer con los conocimientos adquiridos en este capítulo. Te animamos a que explores, experimentes y crees tus propios programas para seguir aprendiendo y dominando Python.</p>
+
+
 </section>
 
 </main> <!-- /main -->

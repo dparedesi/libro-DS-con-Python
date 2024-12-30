@@ -14,9 +14,9 @@ En este libro trataremos temas cruciales como la ética en ciencia de datos, la 
 
 La versión web disponible en [Github Pages](https://dparedesi.github.io/libro-DS-con-Python/) busca democratizar el conocimiento en ciencia de datos. Compártelo y contribuyamos juntos a liberar el conocimiento.
 
-Esta versión se basa en ejercicios diseñados a partir de experiencias prácticas en clase y actividades de la [Certificación Profesional en Data Science](https://online-learning.harvard.edu/series/professional-certificate-data-science)[^2] por **HarvardX**. El código utilizado para generar este libro está disponible en GitHub, fomentando la transparencia y la reproducibilidad.
+Esta versión se basa en ejercicios diseñados a partir de experiencias prácticas en clase y actividades de la [Certificación Profesional en Data Science](https://online-learning.harvard.edu/series/professional-certificate-data-science)[^1] por **HarvardX**. El código utilizado para generar este libro está disponible en GitHub, fomentando la transparencia y la reproducibilidad.
 
-[^2]: https://online-learning.harvard.edu/series/professional-certificate-data-science
+[^1]: https://online-learning.harvard.edu/series/professional-certificate-data-science
 
 Hemos mejorado y actualizado los ejercicios, incorporando casos prácticos recientes sobre análisis de redes sociales, cambio climático y minería de texto. Esto permite aplicar inmediatamente lo aprendido a problemas del mundo real.
 

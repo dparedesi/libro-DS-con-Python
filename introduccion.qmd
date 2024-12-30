@@ -4,11 +4,9 @@
 
 # Introducción {.unnumbered}
 
-La ciencia de datos requiere un enfoque multidisciplinario que combina estadística, programación, minería de datos y comprensión del negocio. Este libro está diseñado para ayudarte a desarrollar esas habilidades mediante ejemplos prácticos en R.
+La ciencia de datos requiere un enfoque multidisciplinario que combina estadística, programación, minería de datos y comprensión del negocio. Este libro está diseñado para ayudarte a desarrollar esas habilidades mediante ejemplos prácticos en Python.
 
-```{r, echo=FALSE}
-#knitr::include_graphics(file.path(img_path,"multidisciplinaria.png"))
-```
+![](img/multidisciplinaria.png)
 
 ## Adentrándonos en el mundo de Python
 
@@ -52,17 +50,19 @@ Te recomendamos descargar la última versión estable de Python para aprovechar 
 
 ### Entornos virtuales: tu espacio de trabajo aislado
 
-En el mundo del desarrollo con Python, es fundamental utilizar entornos virtuales.  ¿Por qué?  Porque te permiten aislar las dependencias de cada proyecto. Imagina que estás trabajando en dos proyectos diferentes, uno que utiliza la versión 2 de una librería y otro que requiere la versión 3. ¡Un caos! Los entornos virtuales evitan este tipo de conflictos y te permiten gestionar las librerías de cada proyecto de forma independiente.
+En el mundo del desarrollo con Python, es fundamental utilizar entornos virtuales. ¿Por qué? Porque te permiten aislar las dependencias de cada proyecto. Imagina que estás trabajando en dos proyectos diferentes, uno que utiliza la versión 2 de una librería y otro que requiere la versión 3. ¡Un caos! Los entornos virtuales evitan este tipo de conflictos y te permiten gestionar las librerías de cada proyecto de forma independiente.
 
 Para crear un entorno virtual, puedes utilizar `venv` (incluido en Python 3) o `conda` (si utilizas Anaconda).
 
 Con `venv`:
+
 ```{python}
 #| eval: false
 python3 -m venv nombre_de_tu_entorno
 ```
 
 Con `conda`:
+
 ```{python}
 #| eval: false
 conda create -n nombre_de_tu_entorno python=3.9 
@@ -70,25 +70,25 @@ conda create -n nombre_de_tu_entorno python=3.9
 
 Recuerda activar el entorno virtual antes de empezar a trabajar en tu proyecto.
 
-**IDEs:  Elige tu arma**
+**IDEs: Elige tu arma**
 
-Un IDE (Entorno de Desarrollo Integrado) es como tu taller de trabajo.  Te proporciona herramientas para escribir, ejecutar y depurar tu código de forma eficiente.  Existen diferentes IDEs para Python, cada uno con sus propias características y ventajas.  Aquí te presentamos algunos de los más populares:
+Un IDE (Entorno de Desarrollo Integrado) es como tu taller de trabajo. Te proporciona herramientas para escribir, ejecutar y depurar tu código de forma eficiente. Existen diferentes IDEs para Python, cada uno con sus propias características y ventajas. Aquí te presentamos algunos de los más populares:
 
-*   **VS Code:** Un editor ligero y versátil, con una gran cantidad de extensiones para personalizarlo a tu gusto. Es una excelente opción tanto para principiantes como para desarrolladores experimentados.
+-   **VS Code:** Un editor ligero y versátil, con una gran cantidad de extensiones para personalizarlo a tu gusto. Es una excelente opción tanto para principiantes como para desarrolladores experimentados.
 
 ![](img/vs-code.png)
 
-*   **PyCharm:** Un IDE completo y potente, con funciones avanzadas para el análisis de código, la depuración y el desarrollo web. Es ideal para proyectos grandes y complejos.
+-   **PyCharm:** Un IDE completo y potente, con funciones avanzadas para el análisis de código, la depuración y el desarrollo web. Es ideal para proyectos grandes y complejos.
 
 ![](img/pycharm.png)
 
-*   **Jupyter Notebook:** Perfecto para la ciencia de datos y el aprendizaje automático. Te permite combinar código, texto y visualizaciones en un único documento. Es muy útil para la experimentación y la creación de prototipos.
+-   **Jupyter Notebook:** Perfecto para la ciencia de datos y el aprendizaje automático. Te permite combinar código, texto y visualizaciones en un único documento. Es muy útil para la experimentación y la creación de prototipos.
 
 ![](img/jupyter.png)
 
-*   **Google Colaboratory: Python en la nube**
+-   **Google Colaboratory: Python en la nube**
 
-Si buscas una opción aún más accesible, Google Colaboratory es la solución.  Es un entorno de desarrollo en la nube que te permite escribir y ejecutar código Python directamente en tu navegador, sin necesidad de instalar nada en tu ordenador.  Además, te proporciona acceso gratuito a GPUs (unidades de procesamiento gráfico), lo que lo hace ideal para proyectos de machine learning que requieren gran capacidad de cómputo.
+Si buscas una opción aún más accesible, Google Colaboratory es la solución. Es un entorno de desarrollo en la nube que te permite escribir y ejecutar código Python directamente en tu navegador, sin necesidad de instalar nada en tu ordenador. Además, te proporciona acceso gratuito a GPUs (unidades de procesamiento gráfico), lo que lo hace ideal para proyectos de machine learning que requieren gran capacidad de cómputo.
 
 ![](img/colab.png)
 

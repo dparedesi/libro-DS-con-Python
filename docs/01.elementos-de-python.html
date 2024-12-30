@@ -230,34 +230,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="cadenas-de-texto-str" class="level3" data-number="1.1.2">
 <h3 data-number="1.1.2" class="anchored" data-anchor-id="cadenas-de-texto-str"><span class="header-section-number">1.1.2</span> Cadenas de texto (<code>str</code>)</h3>
 <p>Las cadenas de texto se utilizan para representar texto. En Python, las cadenas se definen entre comillas simples (<code>'</code>) o comillas dobles (<code>"</code>).</p>
-<div id="696e6991" class="cell" data-execution_count="1">
+<div id="59c601ec" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>mi_nombre <span class="op">=</span> <span class="st">"Juan"</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>mi_ciudad <span class="op">=</span> <span class="st">'Madrid'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Podemos realizar diversas operaciones con las cadenas de texto, como:</p>
 <ul>
 <li><p><strong>Concatenación:</strong> Unir dos o más cadenas.</p>
-<div id="d4353555" class="cell" data-execution_count="2">
+<div id="9cdaa883" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>saludo <span class="op">=</span> <span class="st">"Hola, "</span> <span class="op">+</span> mi_nombre  <span class="co"># Output: "Hola, Juan"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p><strong>Repetición:</strong> Repetir una cadena varias veces.</p>
-<div id="6a28bfa4" class="cell" data-execution_count="3">
+<div id="60cff348" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>eco <span class="op">=</span> <span class="st">"Hola"</span> <span class="op">*</span> <span class="dv">3</span>  <span class="co"># Output: "HolaHolaHola"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p><strong>Indexación:</strong> Acceder a caracteres individuales de una cadena.</p>
-<div id="837af5a4" class="cell" data-execution_count="4">
+<div id="5359a8b9" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>inicial <span class="op">=</span> mi_nombre[<span class="dv">0</span>]  <span class="co"># Output: "J"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p><strong>Rebanado (slicing):</strong> Extraer una porción de una cadena.</p>
-<div id="d43fd224" class="cell" data-execution_count="5">
+<div id="f7f996d4" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>apellido <span class="op">=</span> mi_nombre[<span class="dv">2</span>:<span class="dv">5</span>]  <span class="co"># Output: "an"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p><strong>Longitud:</strong> Obtener la longitud de una cadena (número de caracteres).</p>
-<div id="e3a8d33e" class="cell" data-execution_count="6">
+<div id="a961fb14" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>longitud_nombre <span class="op">=</span> <span class="bu">len</span>(mi_nombre)  <span class="co"># Output: 4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p><strong>Métodos de cadena:</strong> Python ofrece una variedad de métodos para manipular cadenas, como convertir a mayúsculas o minúsculas, reemplazar caracteres, buscar subcadenas, etc.</p>
-<div id="bd5b3302" class="cell" data-execution_count="7">
+<div id="87859698" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>nombre_mayusculas <span class="op">=</span> mi_nombre.upper()  <span class="co"># Output: "JUAN"</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>nombre_minusculas <span class="op">=</span> mi_nombre.lower()  <span class="co"># Output: "juan"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
@@ -270,12 +270,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>En Python, los booleanos se utilizan para:</p>
 <ul>
 <li><p>Representar el resultado de comparaciones:</p>
-<div id="d1cec98b" class="cell" data-execution_count="8">
+<div id="353fe4e1" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>edad <span class="op">=</span> <span class="dv">25</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>es_mayor_de_edad <span class="op">=</span> edad <span class="op">&gt;=</span> <span class="dv">18</span>  <span class="co"># es_mayor_de_edad será True</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p>Controlar el flujo de ejecución de un programa:</p>
-<div id="029b0ae1" class="cell" data-execution_count="9">
+<div id="bf9aed91" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> es_mayor_de_edad:</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Puedes votar"</span>)</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
@@ -285,7 +285,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div></li>
 <li><p>Realizar operaciones lógicas:</p>
-<div id="fd2f4707" class="cell" data-execution_count="10">
+<div id="106489cc" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>tiene_licencia <span class="op">=</span> <span class="va">True</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>tiene_auto <span class="op">=</span> <span class="va">False</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>puede_conducir <span class="op">=</span> tiene_licencia <span class="kw">and</span> tiene_auto  <span class="co"># puede_conducir será False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -299,7 +299,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>not</code>: Invierte el valor de verdad de una expresión.</li>
 </ul>
 <p><strong>Ejemplos:</strong></p>
-<div id="a89b7284" class="cell" data-execution_count="11">
+<div id="00443cfc" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="va">True</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="va">False</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -308,13 +308,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="ffd69535" class="cell" data-execution_count="12">
+<div id="4d883caf" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>a <span class="kw">or</span> b   <span class="co"># Output: True</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>True</code></pre>
 </div>
 </div>
-<div id="de11841f" class="cell" data-execution_count="13">
+<div id="389c951d" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">not</span> a    <span class="co"># Output: False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>False</code></pre>
